@@ -2,9 +2,9 @@
 "use client";
 
 /**
- * BIBAZ — Home UI Orchestrator (Refactored v4.0)
- * Lightweight orchestrator using next/dynamic for below-fold lazy loading.
- * Hero is eager-loaded (above-fold), all other sections are code-split.
+ * LIHAAZ BY MINHAAZ — Home UI Orchestrator
+ * High-fashion royal menswear experience with lazy-loaded below-fold sections.
+ * Studio: House-5, Road 54/A, Gulshan-2, Dhaka
  */
 
 import dynamic from "next/dynamic";
@@ -142,89 +142,89 @@ const EditorialSection = dynamic(
 const defaultHeroSlides: HeroSlide[] = [
   {
     image: "/assets/banner.jpg",
-    title: "REPRESENT OWNERS CLUB",
-    subtitle: "Heavyweight 380 GSM Streetwear Fleece Hoodies in Barcelona Khaki, Brooklyn Navy & Real Madrid.",
-    link: "/categories/hoodies",
-    overline: "NEW WINTER DROP 2026",
+    title: "CURZON HALL ROYAL HERITAGE",
+    subtitle: "Opulent Champagne, Obsidian Black & Terracotta Rust Panjabis with handcrafted zardozi embroidery.",
+    link: "/categories/royal-heritage",
+    overline: "EID & WEDDING COUTURE 2026",
+    color: "from-black/80",
+  },
+  {
+    image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
+    title: "CHAMPAGNE ROYAL ZARDOZI",
+    subtitle: "Exquisite metallic threadwork on regal silk blend fabric with signature bespoke tailoring.",
+    link: "/products/curzon-hall-heritage-champagne-panjabi",
+    overline: "MASTERPIECE EDITION",
     color: "from-black/75",
   },
   {
-    image: "/assets/asset-1.jpg",
-    title: "GIVENCHY DUAL-TONE POLO",
-    subtitle: "Viral textured collar drop polo with premium silicon detailing. 5 trending shades available.",
-    link: "/categories/polo-shirts",
-    overline: "VIRAL LUXURY EDIT",
-    color: "from-black/70",
-  },
-  {
-    image: "/assets/asset-3.jpg",
-    title: "SAVAGE MODE DROP SHOULDER",
-    subtitle: "240+ GSM Heavy Combed Cotton with Ruthless Ambition High-Density Puff Print.",
-    link: "/categories/drop-shoulder",
-    overline: "RAW STREETWEAR AMBITION",
-    color: "from-black/70",
+    image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
+    title: "MIDNIGHT OBSIDIAN BLACK",
+    subtitle: "Intricate tonal and matted gold embroidery designed for unforgettable evening celebrations.",
+    link: "/products/midnight-obsidian-heritage-zardozi-panjabi",
+    overline: "EVENING & RECEPTION COUTURE",
+    color: "from-black/75",
   },
 ];
 
 const defaultCollections: CollectionShowcaseItem[] = [
   {
-    title: "Viral Polo Shirts",
-    image: "/assets/asset-1.jpg",
-    href: "/categories/polo-shirts",
-    tag: "TRENDING VIRAL EDIT",
+    title: "Royal Heritage & Wedding",
+    image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
+    href: "/categories/royal-heritage",
+    tag: "CURZON HALL WEDDING EDITION",
   },
   {
-    title: "Heavy Drop Shoulder",
-    image: "/assets/asset-3.jpg",
-    href: "/categories/drop-shoulder",
-    tag: "240 GSM COMBED COTTON",
+    title: "Festive Eid Collection",
+    image: "/assets/731093757_122137979318871146_1303986987175253818_n.jpg",
+    href: "/categories/festive-eid",
+    tag: "FESTIVE EID 2026 DROPS",
   },
   {
-    title: "Streetwear Hoodies",
-    image: "/assets/banner.jpg",
-    href: "/categories/hoodies",
-    tag: "OWNERS CLUB WINTER DROP",
+    title: "Classic Signature Cotton",
+    image: "/assets/730084646_122134599422871146_2384218671751147055_n.jpg",
+    href: "/categories/classic-cotton",
+    tag: "PREMIUM COMBED COTTON",
   },
   {
-    title: "Club & Street Jerseys",
-    image: "/assets/asset-9.jpg",
-    href: "/categories/jerseys",
-    tag: "RETRO & MODERN KITS",
+    title: "Evening Obsidian Black",
+    image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
+    href: "/categories/evening-black",
+    tag: "JET BLACK ZARDOZI EMBROIDERY",
   },
   {
-    title: "Wholesale Lots (পাইকারি)",
-    image: "/assets/asset-5.jpg",
-    href: "/categories/wholesale",
-    tag: "NAGOR PLAZA WHOLESALE LOTS",
+    title: "Luxury Silk & Jacquard",
+    image: "/assets/728570183_122134599722871146_7459141703632616239_n.jpg",
+    href: "/categories/luxury-silk-jacquard",
+    tag: "RAW SILK & WOVEN JACQUARD",
   },
   {
-    title: "Savage Mode Collection",
-    image: "/assets/asset-6.jpg",
-    href: "/products/savage-mode-drop-shoulder-tshirt-arctic-white",
-    tag: "HIGH-DENSITY PUFF PRINT",
+    title: "Desert Sand Gold Jacquard",
+    image: "/assets/731111670_122137979378871146_3792348301777002016_n.jpg",
+    href: "/products/desert-sand-gold-jacquard-panjabi",
+    tag: "WARM GOLDEN METALLIC ACCENTS",
   },
 ];
 
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Pulsar Fashion-এর Givenchy Polo টি হাতে পেয়ে মুগ্ধ হয়েছি। ফেব্রিকের কোয়ালিটি এবং কলারের ডিটেইলিং এক কথায় অসাধারণ। ডেলিভারি ম্যানের সামনে চেক করে নিশ্চিন্তে পেমেন্ট করেছি!",
-    author: "তানভীর আহমেদ",
-    designation: "Verified Buyer — ধানমন্ডি, ঢাকা",
+      "Lihaaz by Minhaaz-এর Curzon Hall Champagne Panjabi-টি আমার ভাইয়ের ওয়েডিং রিসেপশনে পরেছিলাম। কলারের জারদৌসি এমব্রয়ডারি ও সিল্কের ড্র্যাপ এক কথায় অনন্য। ডেলিভারিতে পার্সেল চেক করে পেমেন্ট করার সুবিধা খুবই চমৎকার।",
+    author: "ব্যারিস্টার আহমেদ জাওয়াদ",
+    designation: "Gulshan-2, Dhaka — Verified Client",
     stars: 5,
   },
   {
     quote:
-      "নগর প্লাজার শোরুম থেকে পাইকারি লট নিয়েছিলাম আমাদের শপের জন্য। ফেব্রিক 240 GSM খাঁটি কম্বড সুতি এবং প্রিন্ট এক নম্বর। কাস্টমারদের কাছ থেকে দারুণ সাড়া পেয়েছি।",
-    author: "মো: রফিকুল ইসলাম",
-    designation: "Wholesale Retailer — চট্টগ্রাম",
+      "গুলশান-২ স্টুডিও ভিজিট করে পাঞ্জাবিটির ট্রায়াল দিয়েছিলাম। ফিটিং একদম মাস্টার কাট আর কাপড়ের আরাম অতুলনীয়। ঈদের জন্য এমন রাজকীয় পোশাকের কোনো বিকল্প নেই।",
+    author: "ড. সাজিদুর রহমান",
+    designation: "Banani, Dhaka — Verified Client",
     stars: 5,
   },
   {
     quote:
-      "Savage Mode Drop Shoulder টি-শার্টের ফিটিং একদম পারফেক্ট বক্সি কাট। ওয়াশ করার পরও কোনো রঙ বা প্রিন্ট নষ্ট হয়নি। ঢাকার ভেতরে ২৪ ঘণ্টার মধ্যে হোম ডেলিভারি পেয়েছি।",
-    author: "ফারহান কবির",
-    designation: "Verified Buyer — উত্তরা, ঢাকা",
+      "চট্টগ্রামে হোম ডেলিভারি নিয়েছিলাম। ৪৮ ঘণ্টার মধ্যে ইনট্যাক্ট পার্সেল পেয়েছি। Midnight Obsidian Black পাঞ্জাবিটির রয়্যাল লুক ছবিতে যেমন দেখেছি বাস্তবে আরও সুন্দর।",
+    author: "তানভীর হাসান চৌধুরী",
+    designation: "Khulshi, Chattogram — Verified Client",
     stars: 5,
   },
 ];
@@ -247,60 +247,60 @@ export function HomeUI({
   const mappedCategories: CategoryItem[] = sourceCategories.map((c: any, i: number) => ({
     name: c.name,
     slug: c.slug,
-    productCount: c._count?.products || c.productCount || 5,
-    image: c.image || `/assets/asset-${(i % 10) + 1}.jpg`,
+    productCount: c._count?.products || c.productCount || 4,
+    image: c.image || ALL_PRODUCTS[i % ALL_PRODUCTS.length]?.image || "/assets/banner.jpg",
   }));
 
   /* ── Map products to UI (always fallback to ALL_PRODUCTS if empty) ── */
   const sourceProducts = dbProducts && dbProducts.length > 0 ? dbProducts : ALL_PRODUCTS;
   const mappedProducts: ArrivalsProduct[] = sourceProducts.slice(0, 8).map((p: any, i: number) => {
-    const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.price || p.basePrice || 750);
+    const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.price || p.basePrice || 4850);
     const variantImages = p.variants?.[0]?.images;
     const prodImg =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : (p.image || `/assets/asset-${(i % 10) + 1}.jpg`);
+        : (p.image || ALL_PRODUCTS[i % ALL_PRODUCTS.length]?.image || "/assets/banner.jpg");
 
     return {
       id: p.id || `prod-${i}`,
       name: p.name,
       slug: p.slug,
       price: variantPrice,
-      compareAtPrice: p.compareAtPrice || Math.round(variantPrice * 1.3),
+      compareAtPrice: p.compareAtPrice || Math.round(variantPrice * 1.2),
       image: prodImg,
-      category: p.category?.name || p.category || "Streetwear",
+      category: p.category?.name || p.category || "Royal Heritage",
       isNew: p.isNew ?? true,
     };
   });
 
-  /* ── Lookbook looks (guaranteed working asset paths) ── */
+  /* ── Lookbook looks (authentic Lihaaz products) ── */
   const lookbookLooks: LookbookLook[] = [
     {
       id: "look1",
-      image: "/assets/asset-1.jpg",
-      title: "Viral Polo Shirts",
-      subtitle: "Viral Givenchy Dual-Tone Luxury Polo - Slate Blue",
-      slug: "viral-givenchy-dual-tone-polo-slate-blue",
-      price: 750,
-      tag: "VIRAL HIT",
+      image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
+      title: "Royal Heritage & Wedding",
+      subtitle: "Curzon Hall Heritage Champagne Panjabi",
+      slug: "curzon-hall-heritage-champagne-panjabi",
+      price: 4850,
+      tag: "ROYAL MASTERPIECE",
     },
     {
       id: "look2",
-      image: "/assets/asset-3.jpg",
-      title: "Drop Shoulder T-Shirts",
-      subtitle: "Savage Mode Heavy Cotton Drop Shoulder - Jet Black",
-      slug: "savage-mode-drop-shoulder-tshirt-jet-black",
-      price: 550,
-      tag: "240 GSM HEAVY",
+      image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
+      title: "Evening Obsidian Black",
+      subtitle: "Midnight Obsidian Heritage Zardozi Panjabi",
+      slug: "midnight-obsidian-heritage-zardozi-panjabi",
+      price: 5450,
+      tag: "COUTURE BLACK",
     },
     {
       id: "look3",
-      image: "/assets/banner.jpg",
-      title: "Hoodies & Winter Wear",
-      subtitle: "Represent Owners Club Heavyweight Hoodie",
-      slug: "represent-owners-club-barcelona-hoodie-khaki",
-      price: 1250,
-      tag: "WINTER DROP",
+      image: "/assets/731093757_122137979318871146_1303986987175253818_n.jpg",
+      title: "Festive Eid Collection",
+      subtitle: "Terracotta Rust Royal Heritage Panjabi",
+      slug: "terracotta-rust-royal-heritage-panjabi",
+      price: 4950,
+      tag: "WARM EARTH TONE",
     },
   ];
 
@@ -312,8 +312,8 @@ export function HomeUI({
           title: banner.title || "",
           subtitle: banner.subtitle || "",
           link: banner.content?.link || "/shop",
-          overline: banner.content?.overline || "NEW DROP",
-          color: banner.content?.color || "from-black/75",
+          overline: banner.content?.overline || "ROYAL HERITAGE",
+          color: banner.content?.color || "from-black/80",
         }))
       : defaultHeroSlides;
 
@@ -325,7 +325,7 @@ export function HomeUI({
           image:
             c.image && !c.image.includes("cloudinary")
               ? c.image
-              : (defaultCollections[i % defaultCollections.length]?.image || "/assets/asset-1.jpg"),
+              : (defaultCollections[i % defaultCollections.length]?.image || "/assets/banner.jpg"),
           href: `/categories/${c.slug}`,
           tag: c.description?.toUpperCase() || c.name.toUpperCase(),
         }))
@@ -345,7 +345,7 @@ export function HomeUI({
       {/* 4. LOOKBOOK / EDITORIAL SHOWCASE */}
       <LookbookSection looks={lookbookLooks} />
 
-      {/* 5. TRENDING STREETWEAR DROPS / PRODUCTS SECTION (Right before collections) */}
+      {/* 5. TRENDING PANJABIS / PRODUCTS SECTION */}
       <NewArrivalsGrid products={mappedProducts} />
 
       {/* 6. ALL COLLECTIONS */}

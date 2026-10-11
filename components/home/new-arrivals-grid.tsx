@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * BIBAZ — New Arrivals Grid (Extracted from home-client.tsx)
- * Product cards grid with Framer Motion stagger animations.
+ * LIHAAZ BY MINHAAZ — New Arrivals Grid
+ * Royal Heritage Panjabi Couture Grid with Framer Motion.
  */
 
 import Link from "next/link";
@@ -81,29 +81,29 @@ export function NewArrivalsGrid({ products }: NewArrivalsGridProps) {
         >
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="inline-block px-3 py-1 rounded-full border border-accent/50 bg-accent/10 text-foreground text-[10px] uppercase tracking-[0.26em] font-bold">
-                ✦ PULSAR ORIGINAL DROPS ✦
+              <span className="inline-block px-3 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/10 text-foreground text-[10px] uppercase tracking-[0.26em] font-bold">
+                ✦ ROYAL HERITAGE COUTURE ✦
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-[42px] font-bold tracking-tight text-foreground font-heading">
-              Featured Products & Drops
+              Featured Panjabis & Royal Attire
             </h2>
             <p className="text-sm text-muted-foreground mt-2 font-sans max-w-xl">
-              240+ GSM কম্বড কটন, ভাইরাল পোলো ও এক্সক্লুসিভ ড্রপ শোল্ডার টি-শার্ট। খুচরা ও পাইকারি উভয় অর্ডার গ্রহণযোগ্য।
+              ঐতিহ্যবাহী জারদৌসি কাজ, পিওর ও ব্লেন্ডেড সিল্ক, জ্যাকর্ড এবং প্রিমিয়াম কম্বড কটনের রাজকীয় পাঞ্জাবি কালেকশন। গুলশান-২ স্টুডিও ও অনলাইন ডেলিভারি।
             </p>
           </div>
           <Link
             href="/shop"
-            className="text-xs font-bold uppercase tracking-[0.22em] text-foreground border-b-2 border-accent hover:border-foreground pb-1.5 transition-colors inline-flex items-center gap-2 cursor-pointer group/link"
+            className="text-xs font-bold uppercase tracking-[0.22em] text-foreground border-b-2 border-[#c9a96e] hover:border-foreground pb-1.5 transition-colors inline-flex items-center gap-2 cursor-pointer group/link"
           >
-            Browse All Products <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 text-accent group-hover/link:text-foreground" />
+            Browse All Panjabis <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 text-[#c9a96e] group-hover/link:text-foreground" />
           </Link>
         </motion.div>
 
-        {/* Product grid */}
+        {/* Grid */}
         <motion.div
           variants={containerVariants}
-          className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-8 md:gap-x-6 md:gap-y-14"
+          className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-8 md:gap-x-6 md:gap-y-12"
         >
           {products.map((product) => (
             <motion.div key={product.id} variants={cardVariants}>

@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * BIBAZ — Short Brand Story Section (Homepage)
- * Concise, high-impact overview of "Fashion with Fusion" linking to full About Us and Collections.
+ * LIHAAZ BY MINHAAZ — Short Brand Story Section (Homepage)
+ * Gulshan-2 design studio, bespoke zardozi embroidery & royal heritage couture.
  */
 
 import { useState } from "react";
@@ -61,11 +61,11 @@ export function EditorialSection() {
             }}
             className="lg:col-span-5 relative group"
           >
-            <div className="absolute -inset-2 bg-accent-light border border-accent/25 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
+            <div className="absolute -inset-2 bg-[#f4eee1] border border-[#c9a96e]/25 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-neutral-100 shadow-md">
               <ImageWithSkeleton
-                src="/assets/banner.jpg"
-                alt="Pulsar Fashion — Streetwear & Wholesale"
+                src="/assets/731105183_122137979606871146_8917897017688220084_n.jpg"
+                alt="Lihaaz by Minhaaz — Royal Heritage Champagne Panjabi"
                 className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
@@ -86,39 +86,42 @@ export function EditorialSection() {
           >
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-accent animate-pulse" />
-                <p className="text-[10px] uppercase tracking-[0.25em] text-accent font-bold">
-                  ABOUT PULSAR FASHION
+                <Sparkles className="h-4 w-4 text-[#c9a96e] animate-pulse" />
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#c9a96e] font-bold">
+                  ABOUT LIHAAZ BY MINHAAZ
                 </p>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15] text-foreground font-heading">
-                প্রিমিয়াম স্ট্রিটওয়্যার ও <span className="italic font-normal text-accent">পাইকারি পোশাকের বিশ্বস্ত প্রতিষ্ঠান</span>
+                ঐতিহ্য ও রাজকীয় আভিজাত্যের <span className="italic font-normal text-[#c9a96e]">অনন্য ফ্যাশন মেলবন্ধন</span>
               </h2>
             </div>
 
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              <strong>Pulsar Fashion</strong> বাংলাদেশের তরুণদের আধুনিক স্ট্রিটওয়্যার ও মেনস ট্রেন্ডি পোশাকের প্রধান ঠিকানা। ঢাকার গুলিস্তান ফুলবাড়িয়া নগর প্লাজায় অবস্থিত আমাদের সুবিশাল শোরুম থেকে আমরা সারাদেশের রিটেইলার ও কাস্টমারদের সরবরাহ করছি ভাইরাল পোলো শার্ট, ড্রপ শোল্ডার টি-শার্ট, ক্লাব জার্সি এবং প্রিমিয়াম হুডি।
+              <strong>Lihaaz by Minhaaz</strong> ঢাকার ফ্যাশন সচেতন ও রুচিশীল পুরুষদের জন্য নিয়ে এসেছে খাঁটি সিল্ক, ফাইন সুতি ও এক্সক্লুসিভ জারদৌসি এমব্রয়ডারির প্রিমিয়াম পাঞ্জাবি কালেকশন। গুলশান-২ স্টুডিওতে তৈরি প্রতিটি পোশাকে বজায় রাখা হয় আন্তর্জাতিক সেলাই ফিনিশিং, নিখুঁত ড্র্যাপ এবং আরামদায়ক ফিটিং।
             </p>
 
-            <div className="p-4 md:p-5 bg-white border-l-2 border-accent rounded-sm shadow-2xs">
-              <p className="text-xs md:text-sm text-foreground/90 leading-relaxed font-medium italic">
-                &ldquo;আমরা প্রতিটি পোশাকে নিশ্চিত করি সর্বোচ্চ মানের ২৪০+ GSM কম্বড কটন ফেব্রিক, দীর্ঘস্থায়ী হাই-ডেনসিটি পাফ প্রিন্ট এবং নিখুঁত আন্তর্জাতিক স্টিচিং। খুচরা ও পাইকারি উভয় ক্ষেত্রেই আমাদের লক্ষ্য সেরা মূল্যে সেরা পণ্য পৌঁছে দেওয়া।&rdquo;
-              </p>
+            <div className="grid grid-cols-2 gap-4 pt-2 border-t border-border/60">
+              <div className="space-y-1">
+                <p className="text-xl md:text-2xl font-bold text-foreground font-heading">
+                  গুলশান-২
+                </p>
+                <p className="text-xs text-muted-foreground">ডিজাইন স্টুডিও ও ওয়াক-ইন ট্রায়াল</p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xl md:text-2xl font-bold text-foreground font-heading">
+                  ১০০% চেক COD
+                </p>
+                <p className="text-xs text-muted-foreground">পার্সেল দেখে মূল্য পরিশোধের সুবিধা</p>
+              </div>
             </div>
 
-            <div className="pt-2 flex flex-wrap items-center gap-4">
-              <Link
-                href="/shop"
-                className="inline-flex items-center justify-center h-12 px-8 bg-[#1c1815] hover:bg-[#c9a96e] text-white hover:text-[#1c1815] text-xs font-bold uppercase tracking-[0.16em] transition-all rounded-sm shadow-sm"
-              >
-                সমস্ত কালেকশন দেখুন
-              </Link>
+            <div className="pt-3">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-foreground border-b border-foreground/50 hover:border-accent hover:text-accent pb-1 transition-all"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground hover:text-[#c9a96e] transition-colors group cursor-pointer"
               >
-                আমাদের সম্পর্কে বিস্তারিত
-                <ArrowRight className="h-3.5 w-3.5" />
+                Learn More About Our Heritage
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </motion.div>

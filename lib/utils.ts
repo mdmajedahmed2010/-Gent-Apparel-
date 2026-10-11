@@ -57,7 +57,7 @@ export function generateSKU(
  */
 export function generateOrderNumber(sequentialId: number): string {
   const year = new Date().getFullYear();
-  return `ORD-${year}-${String(sequentialId).padStart(5, "0")}`;
+  return `LM-${year}-${String(sequentialId).padStart(5, "0")}`;
 }
 
 /**
@@ -77,13 +77,14 @@ export function truncate(text: string, maxLength: number): string {
 
 /**
  * Calculate delivery charge based on city
+ * Inside Dhaka: ৳100 | Outside Dhaka: ৳200
  */
 export function calculateDeliveryCharge(city: string): number {
   const dhakaAreas = ["dhaka", "ঢাকা"];
   const isInsideDhaka = dhakaAreas.some((area) =>
     city.toLowerCase().includes(area)
   );
-  return isInsideDhaka ? 80 : 150;
+  return isInsideDhaka ? 100 : 200;
 }
 
 /**

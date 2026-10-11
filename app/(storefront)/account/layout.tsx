@@ -10,8 +10,8 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "My Account — Pulsar Fashion",
-  description: "Manage your Pulsar Fashion account, orders, and addresses.",
+  title: "My Account — Lihaaz by Minhaaz",
+  description: "Manage your Lihaaz by Minhaaz royal couture account, orders, and studio appointments.",
 };
 
 export default async function AccountLayout({ children }: { children: React.ReactNode }) {

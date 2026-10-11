@@ -1,17 +1,19 @@
 /**
- * PULSAR FASHION — Application Constants
- * Streetwear & Premium Men's Apparel (Wholesale & Retail Hub)
- * Showroom: Shop #85 (Ground Floor), Nagor Plaza, Fulbaria, Gulistan, Dhaka
+ * LIHAAZ BY MINHAAZ — Application Constants
+ * Bespoke Luxury Panjabi Couture & Men's Heritage Attire
+ * Studio: House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh
+ * Hotline: +880 1755-627874 | 01755-627874
+ * Facebook: https://www.facebook.com/lihaazbyminhaaz/
  */
 
-// Delivery Charges (BDT)
+// Delivery Charges (BDT) — Verified against official policy
 export const DELIVERY_CHARGE = {
-  DHAKA_INSIDE: 80,
-  OUTSIDE_DHAKA: 150,
+  DHAKA_INSIDE: 100,
+  OUTSIDE_DHAKA: 200,
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "PLS";
+export const ORDER_PREFIX = "LM";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -53,8 +55,8 @@ export const RATE_LIMITS = {
 
 // Image Upload Limits
 export const UPLOAD_LIMITS = {
-  MAX_SIZE_MB: 5,
-  MAX_SIZE_BYTES: 5 * 1024 * 1024,
+  MAX_SIZE_MB: 8,
+  MAX_SIZE_BYTES: 8 * 1024 * 1024,
   ALLOWED_TYPES: ["image/jpeg", "image/png", "image/webp", "image/gif"],
   ALLOWED_EXTENSIONS: [".jpg", ".jpeg", ".png", ".webp", ".gif"],
   MAX_DIMENSION: 4000,
@@ -68,28 +70,29 @@ export const PAGINATION = {
 
 // Session & Auth
 export const AUTH = {
-  ACCESS_TOKEN_EXPIRY: 15 * 60, // 15 minutes in seconds
-  REFRESH_TOKEN_EXPIRY: 7 * 24 * 60 * 60, // 7 days in seconds
-  ADMIN_SESSION_TIMEOUT: 30 * 60, // 30 minutes in seconds
+  ACCESS_TOKEN_EXPIRY: 15 * 60, // 15 minutes
+  REFRESH_TOKEN_EXPIRY: 7 * 24 * 60 * 60, // 7 days
+  ADMIN_SESSION_TIMEOUT: 30 * 60, // 30 minutes
   BCRYPT_SALT_ROUNDS: 12,
-  PASSWORD_RESET_EXPIRY: 60 * 60, // 1 hour in seconds
+  PASSWORD_RESET_EXPIRY: 60 * 60, // 1 hour
 } as const;
 
-// Business Info — Pulsar Fashion
+// Business Info — Lihaaz by Minhaaz
 export const BUSINESS = {
-  NAME: "Pulsar Fashion",
-  TAGLINE: "Elevate Your Streetwear | Premium Wholesale & Retail Fashion Hub",
-  PHONE: "01600911522",
-  HOTLINE_DISPLAY: "01600911522, 01936581870",
-  WHATSAPP: "01600911522",
-  WHATSAPP_LINK: "https://wa.me/8801600911522",
-  EMAIL: "pulsarfashionbd@gmail.com",
-  ADDRESS: "Shop no: 85, Ground Floor, Nagor Plaza, Fulbaria, Gulistan, Dhaka",
-  BRANCH_ADDRESS: "Shop no: 67 (1st Floor) & Shop 85 (Ground Floor), Nagor Plaza, Fulbaria, Gulistan, Dhaka",
-  MARKET: "Nagor Plaza, Fulbaria, Gulistan, Dhaka-1000",
-  FACEBOOK: "https://www.facebook.com/profile.php?id=61561618804910",
-  TIKTOK: "https://www.tiktok.com",
-  INSTAGRAM: "https://www.instagram.com",
+  NAME: "Lihaaz by Minhaaz",
+  TAGLINE: "Elegance in Every Thread | Bespoke Luxury Panjabi Couture",
+  PHONE: "+880 1755-627874",
+  HOTLINE: "+880 1755-627874",
+  HOTLINE_DISPLAY: "01755-627874",
+  WHATSAPP: "01755627874",
+  WHATSAPP_LINK: "https://wa.me/8801755627874",
+  EMAIL: "lihaazbyminhaaz@gmail.com",
+  ADDRESS: "House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh",
+  STUDIO_HOURS: "Saturday - Thursday (11:00 AM - 9:00 PM), Friday (3:00 PM - 9:30 PM)",
+  MARKET: "Gulshan-2, Dhaka-1212",
+  FACEBOOK: "https://www.facebook.com/lihaazbyminhaaz/",
+  INSTAGRAM: "https://www.instagram.com/lihaazbyminhaaz",
+  TIKTOK: "https://www.tiktok.com/@lihaazbyminhaaz",
 } as const;
 
 // Currency
@@ -104,10 +107,9 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  PULSAR10: { type: "percent", value: 10, label: "10% off your order" },
-  PULSAR20: { type: "percent", value: 20, label: "20% special discount" },
-  STREETWEAR15: { type: "percent", value: 15, label: "15% Streetwear Drop Discount" },
-  WELCOME: { type: "flat", value: 100, label: "৳100 Welcome Discount" },
-  WHOLESALE500: { type: "flat", value: 500, label: "৳500 Bulk Lot Discount" },
-  FLAT200: { type: "flat", value: 200, label: "৳200 flat discount" },
+  LIHAAZ10: { type: "percent", value: 10, label: "10% off your royal order" },
+  EIDSPECIAL: { type: "percent", value: 15, label: "15% Eid Festive Privilege" },
+  ROYAL500: { type: "flat", value: 500, label: "৳500 flat bespoke discount" },
+  WELCOME: { type: "flat", value: 200, label: "৳200 Welcome Gift" },
+  WEDDING1000: { type: "flat", value: 1000, label: "৳1,000 Wedding Edition Privilege" },
 } as const;

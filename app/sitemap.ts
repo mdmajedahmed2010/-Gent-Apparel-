@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://pulsarfashionbd.com";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://lihaazbyminhaaz.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -19,11 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const categories = [
-    "/categories/viral-polo-shirts",
-    "/categories/drop-shoulder-t-shirts",
-    "/categories/club-street-jerseys",
-    "/categories/hoodies-winter-wear",
-    "/categories/wholesale-lots",
+    "/categories/royal-heritage",
+    "/categories/festive-eid",
+    "/categories/classic-cotton",
+    "/categories/evening-black",
+    "/categories/luxury-silk-jacquard",
   ];
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((path) => ({

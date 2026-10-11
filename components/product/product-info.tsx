@@ -256,7 +256,7 @@ export function ProductInfo({
     <div className="space-y-6">
       {/* Category/Brand overline */}
       <p className="text-[10.5px] md:text-[11px] font-editorial-label text-[#c9a96e]">
-        PULSAR FASHION — ORIGINAL STREETWEAR &amp; WHOLESALE
+        LIHAAZ BY MINHAAZ — ROYAL HERITAGE COUTURE
       </p>
 
       {/* Product Name */}
@@ -408,13 +408,13 @@ export function ProductInfo({
                   rows={3}
                   value={customNote}
                   onChange={(e) => setCustomNote(e.target.value)}
-                  placeholder="যেমন: পাইকারি রেটে ১২/২৪ পিসের লট নিতে চাই, অথবা নির্দিষ্ট সাইজের নির্দেশনা..."
+                  placeholder="যেমন: বিশেষ কোনো সাইজ মেজারমেন্ট বা উপহারের বিশেষ রিকোয়েস্ট থাকলে এখানে লিখুন..."
                   className="w-full p-3.5 border border-border/60 bg-white text-sm transition-all focus:outline-none focus:border-foreground focus:ring-1 focus:ring-foreground rounded-sm resize-none shadow-inner"
                 />
                 <div className="mt-3 flex items-start gap-2 bg-amber-50 p-3 rounded-sm border border-amber-100">
                   <Info className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                   <p className="text-[10px] text-amber-800 font-medium leading-relaxed">
-                    পাইকারি লটের ক্ষেত্রে সরাসরি আমাদের শোরুম (দোকান #৮৫ ও #৬৭, নগর প্লাজা) বা হটলাইনে যোগাযোগ করুন: 01600911522.
+                    গুলশান-২ স্টুডিও ভিজিট বা কাস্টম ফিটিংস/গ্রুমিং অর্ডারের জন্য আমাদের কনসিয়ার্জ হটলাইনে যোগাযোগ করুন: +880 1755-627874.
                   </p>
                 </div>
               </div>
@@ -575,10 +575,10 @@ export function ProductInfo({
           onToggle={() => toggleSection("shipping")}
         >
           <div className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
-            <p>• ঢাকা সিটির ভেতরে ডেলিভারি চার্জ: <strong>৳৮০</strong> (২৪–৪৮ ঘণ্টার মধ্যে নিশ্চিত হোম ডেলিভারি)।</p>
-            <p>• ঢাকার বাইরে ডেলিভারি চার্জ: <strong>৳১৫০</strong> (২–৩ দিনের মধ্যে কুরিয়ার হোম ডেলিভারি)।</p>
-            <p>• <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery):</strong> সারাদেশে ক্যাশ অন ডেলিভারি সুবিধা রয়েছে। ডেলিভারি ম্যানের উপস্থিতিতে পণ্য দেখে ও চেক করে মূল্য পরিশোধ করুন।</p>
-            <p>• পাইকারি লটের জন্য সরাসরি শোরুমে আসুন: দোকান #৮৫ (নিচতলা) ও #৬৭ (১ম তলা), নগর প্লাজা, ফুলবাড়িয়া, ঢাকা-১০০০ (হটলাইন: 01600911522)।</p>
+            <p>• ঢাকা সিটির ভেতরে ডেলিভারি চার্জ: <strong>৳১০০</strong> (২৪–৪৮ ঘণ্টার মধ্যে হোম ডেলিভারি)।</p>
+            <p>• ঢাকার বাইরে ডেলিভারি চার্জ: <strong>৳২০০</strong> (৪৮–৭২ ঘণ্টার মধ্যে হোম ডেলিভারি)।</p>
+            <p>• <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery):</strong> সারাদেশে ক্যাশ অন ডেলিভারি সুবিধা রয়েছে। ডেলিভারিম্যানের সামনে পার্সেল খুলে গুণগত মান ও সাইজ চেক করে মূল্য পরিশোধ করুন।</p>
+            <p>• গুলশান-২ স্টুডিও ভিজিট ও ওয়াক-ইন ট্রায়াল: House-5, Road 54/A, Gulshan-2, Dhaka (হটলাইন / WhatsApp: +880 1755-627874)।</p>
           </div>
         </AccordionItem>
       </div>

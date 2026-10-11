@@ -22,10 +22,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const cat = CATEGORIES.find((c) => c.slug === slug);
-  const title = cat ? `${cat.name} — Pulsar Fashion` : "Category — Pulsar Fashion";
+  const title = cat ? `${cat.name} — Lihaaz by Minhaaz` : "Panjabi Category — Lihaaz by Minhaaz";
   return {
     title,
-    description: cat?.description || "Browse Pulsar Fashion collection",
+    description: cat?.description || "Browse Lihaaz by Minhaaz royal heritage Panjabi collection",
   };
 }
 
@@ -65,7 +65,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   const categoryMeta = CATEGORIES.find((c) => c.slug === slug) || {
     name: slug.replace(/-/g, " ").toUpperCase(),
-    description: "Pulsar Fashion official collection",
+    description: "Lihaaz by Minhaaz royal heritage collection",
   };
 
   return (
@@ -81,13 +81,13 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         {/* Header */}
         <div className="mt-8 mb-10 text-center">
           <span className="inline-block px-3.5 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/10 text-[#0f0e0d] text-[10px] uppercase tracking-[0.28em] font-bold mb-3">
-            ✦ PULSAR FASHION CATEGORY ✦
+            ✦ LIHAAZ ROYAL CATEGORY ✦
           </span>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0f0e0d] font-heading capitalize">
             {categoryMeta.name}
           </h1>
           <div className="w-16 h-[2px] bg-[#c9a96e] mx-auto mt-4" />
-          <p className="text-muted-foreground mt-3 text-xs md:text-sm max-w-lg mx-auto">
+          <p className="text-muted-foreground mt-3 text-xs md:text-sm max-w-lg mx-auto font-sans">
             {categoryMeta.description}
           </p>
         </div>
@@ -96,18 +96,18 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           <Link
             href="/shop"
-            className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-white border border-border hover:border-foreground"
+            className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-white border border-border hover:border-[#c9a96e]"
           >
-            All Products
+            All Panjabis
           </Link>
           {CATEGORIES.map((c) => (
             <Link
               key={c.slug}
               href={`/categories/${c.slug}`}
-              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all ${
+              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors ${
                 c.slug === slug
-                  ? "bg-[#0f0e0d] text-white"
-                  : "bg-white border border-border text-foreground hover:border-foreground"
+                  ? "bg-[#0f0e0d] text-[#e8ce9e] border border-[#c9a96e]/40"
+                  : "bg-white border border-border text-foreground hover:border-[#c9a96e]"
               }`}
             >
               {c.name}
@@ -115,23 +115,21 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
           ))}
         </div>
 
-        {/* Product Count Bar */}
-        <div className="flex items-center justify-between pb-4 mb-8 border-b border-border/60 text-xs text-muted-foreground font-medium">
+        {/* Product Count & Meta Bar */}
+        <div className="flex items-center justify-between pb-4 mb-8 border-b border-border/60 text-xs text-muted-foreground">
           <p>
             Showing <strong className="text-foreground">{products.length}</strong> items in{" "}
-            <strong>{categoryMeta.name}</strong>
+            <span className="font-semibold text-foreground">{categoryMeta.name}</span>
           </p>
-          <span>সারাদেশে ক্যাশ অন ডেলিভারি (COD)</span>
+          <span>সারা দেশে ক্যাশ অন ডেলিভারি ও পার্সেল চেক সুবিধা</span>
         </div>
 
-        {/* Product Grid */}
+        {/* Products Grid */}
         {products.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {products.map((product: any) => {
               const primaryVariant = product.variants?.[0];
-              const variantPrice = primaryVariant?.price
-                ? Number(primaryVariant.price)
-                : Number(product.basePrice);
+              const variantPrice = primaryVariant?.price ? Number(primaryVariant.price) : Number(product.basePrice);
               const variantImages = primaryVariant?.images;
               const imageUrl =
                 Array.isArray(variantImages) && variantImages.length > 0
@@ -145,9 +143,9 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   name={product.name}
                   slug={product.slug}
                   price={variantPrice}
-                  compareAtPrice={Number(product.compareAtPrice) || Math.round(variantPrice * 1.3)}
+                  compareAtPrice={Number(product.compareAtPrice) || Math.round(variantPrice * 1.2)}
                   image={imageUrl}
-                  category={product.category?.name || categoryMeta.name}
+                  category={categoryMeta.name}
                   isNew={true}
                 />
               );
@@ -155,12 +153,12 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
           </div>
         ) : (
           <div className="py-20 text-center space-y-4">
-            <p className="text-muted-foreground text-sm">এই ক্যাটাগরিতে বর্তমানে কোনো প্রোডাক্ট নেই।</p>
+            <p className="text-muted-foreground text-sm">এই ক্যাটাগরিতে কোনো পণ্য পাওয়া যায়নি।</p>
             <Link
               href="/shop"
               className="inline-flex px-6 py-2.5 bg-foreground text-background text-xs font-bold rounded-sm uppercase tracking-wider"
             >
-              সব প্রোডাক্ট দেখুন
+              সব পাঞ্জাবি দেখুন
             </Link>
           </div>
         )}

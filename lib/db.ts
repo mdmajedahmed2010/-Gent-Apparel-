@@ -70,13 +70,18 @@ function createDummyPrisma() {
             if (model === "sitesetting") {
               if (method === "findUnique") {
                 const key = args[0]?.where?.key;
-                if (key === "store_name") return { key: "store_name", value: "Pulsar Fashion" };
-                if (key === "favicon_url") return { key: "favicon_url", value: "/favicon.ico" };
+                if (key === "store_name") return { key: "store_name", value: "Lihaaz by Minhaaz" };
+                if (key === "favicon_url") return { key: "favicon_url", value: "/assets/logo.jpg" };
+                if (key === "logo_url") return { key: "logo_url", value: "/assets/logo.jpg" };
                 return null;
               }
               if (method === "findMany") return [
-                { key: "store_name", value: "Pulsar Fashion" },
-                { key: "store_tagline", value: "Premium Streetwear & Wholesale Hub" },
+                { key: "store_name", value: "Lihaaz by Minhaaz" },
+                { key: "store_tagline", value: "Designer Menswear & Royal Heritage Panjabi" },
+                { key: "store_phone", value: "+880 1755-627874" },
+                { key: "store_address", value: "House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh" },
+                { key: "logo_url", value: "/assets/logo.jpg" },
+                { key: "favicon_url", value: "/assets/logo.jpg" },
               ];
             }
 

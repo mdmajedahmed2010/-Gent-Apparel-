@@ -153,7 +153,7 @@ export function generateInvoice(data: InvoiceData): string {
   doc.setFontSize(8);
   doc.setFont("helvetica", "normal");
   doc.setTextColor(150);
-  doc.text("Thank you for shopping with BIBAZ!", 105, 280, { align: "center" });
+  doc.text(`Thank you for shopping with ${BUSINESS.NAME}!`, 105, 280, { align: "center" });
   doc.text("This is a computer-generated invoice. No signature required.", 105, 285, {
     align: "center",
   });

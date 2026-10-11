@@ -1,23 +1,23 @@
 {
-  "name": "BIBAZ Premium Store",
-  "short_name": "BIBAZ",
-  "description": "Premium E-commerce Fashion Experience",
+  "name": "Lihaaz by Minhaaz — Royal Heritage Menswear",
+  "short_name": "Lihaaz",
+  "description": "Designer Menswear, Bespoke Panjabis & Royal Heritage Festive Attire",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#111827",
+  "background_color": "#0f0e0d",
+  "theme_color": "#c9a96e",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/globe.svg",
+      "src": "/assets/logo.jpg",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "/globe.svg",
+      "src": "/assets/logo.jpg",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]

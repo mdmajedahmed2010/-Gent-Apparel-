@@ -1,5 +1,5 @@
 /**
- * PULSAR FASHION — JSON-LD Structured Data Components
+ * LIHAAZ BY MINHAAZ — JSON-LD Structured Data Components
  * SEO (Organization, BreadcrumbList, Product schemas)
  */
 
@@ -9,25 +9,26 @@ export function OrganizationJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
-    name: "Pulsar Fashion",
+    name: "Lihaaz by Minhaaz",
+    alternateName: "লিহাজ বাই মিনহাজ",
     description: BUSINESS.TAGLINE,
-    telephone: BUSINESS.PHONE,
+    telephone: BUSINESS.HOTLINE,
     email: BUSINESS.EMAIL,
-    url: "https://pulsarfashionbd.com",
-    logo: "https://pulsarfashionbd.com/assets/logo.jpg",
+    url: "https://lihaazbyminhaaz.com",
+    logo: "https://lihaazbyminhaaz.com/assets/logo.jpg",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: BUSINESS.PHONE,
+      telephone: BUSINESS.HOTLINE,
       contactType: "customer service",
       areaServed: "BD",
       availableLanguage: ["Bengali", "English"],
     },
-    sameAs: [BUSINESS.FACEBOOK],
+    sameAs: [BUSINESS.FACEBOOK, BUSINESS.WHATSAPP],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Shop no: 85 (Ground Floor), Nagor Plaza, Fulbaria",
-      addressLocality: "Gulistan, Dhaka",
-      postalCode: "1000",
+      streetAddress: "House-5, Road 54/A, Gulshan-2",
+      addressLocality: "Dhaka",
+      postalCode: "1212",
       addressCountry: "BD",
     },
   };
@@ -44,13 +45,13 @@ export function WebsiteJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Pulsar Fashion",
-    url: "https://pulsarfashionbd.com",
+    name: "Lihaaz by Minhaaz",
+    url: "https://lihaazbyminhaaz.com",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://pulsarfashionbd.com/search?q={search_term_string}",
+        urlTemplate: "https://lihaazbyminhaaz.com/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -77,14 +78,14 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://pulsarfashionbd.com",
+        item: "https://lihaazbyminhaaz.com",
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
         name: item.name,
         ...(item.url && {
-          item: `https://pulsarfashionbd.com${item.url}`,
+          item: `https://lihaazbyminhaaz.com${item.url}`,
         }),
       })),
     ],

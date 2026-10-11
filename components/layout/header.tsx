@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * PULSAR FASHION — Header Component
- * Clean, modern streetwear & wholesale apparel design
- * Showroom: Shop #85 (Ground Floor), Nagor Plaza, Fulbaria, Gulistan, Dhaka
+ * LIHAAZ BY MINHAAZ — Header Component
+ * Royal Heritage, Designer Menswear & Festive Panjabi Couture
+ * Studio: House-5, Road 54/A, Gulshan-2, Dhaka
+ * Hotline: +880 1755-627874
  */
 
 import Link from "next/link";
@@ -17,13 +18,13 @@ import { MegaMenu } from "../storefront/mega-menu";
 import { BUSINESS } from "@/lib/constants";
 
 const navLinks = [
-  { href: "/collections/polo-shirts", label: "Viral Polos" },
-  { href: "/collections/drop-shoulder", label: "Drop Shoulder" },
-  { href: "/collections/jerseys", label: "Club Jerseys" },
-  { href: "/collections/hoodies", label: "Winter Hoodies" },
-  { href: "/collections/wholesale", label: "Wholesale (পাইকারি)" },
-  { href: "/shop", label: "Shop All" },
-  { href: "/about", label: "About Us" },
+  { href: "/categories/royal-heritage", label: "Royal Heritage" },
+  { href: "/categories/festive-eid", label: "Festive Eid" },
+  { href: "/categories/classic-cotton", label: "Classic Cotton" },
+  { href: "/categories/evening-black", label: "Evening Black" },
+  { href: "/categories/luxury-silk-jacquard", label: "Luxury Silk" },
+  { href: "/shop", label: "All Panjabis" },
+  { href: "/about", label: "Our Studio" },
 ];
 
 const megaMenuData: Record<
@@ -34,62 +35,60 @@ const megaMenuData: Record<
     featured: { title: string; subtitle: string; image: string; href: string };
   }
 > = {
-  "Viral Polos": {
+  "Royal Heritage": {
     categories: [
-      { label: "Shop All Viral Polos", href: "/collections/polo-shirts" },
-      { label: "Dual-Tone Givenchy Edition", href: "/collections/polo-shirts" },
-      { label: "Luxury Pique Cotton Polos", href: "/collections/polo-shirts" },
-      { label: "Wholesale 6 Pcs Polo Bundle", href: "/collections/wholesale" },
+      { label: "All Heritage & Wedding Panjabis", href: "/categories/royal-heritage" },
+      { label: "Curzon Hall Heritage Champagne Edition", href: "/products/curzon-hall-heritage-champagne-panjabi" },
+      { label: "Midnight Obsidian Zardozi Edition", href: "/products/midnight-obsidian-heritage-zardozi-panjabi" },
+      { label: "Bespoke Groom & Festive Wear", href: "/shop" },
     ],
     styles: [
-      { label: "Slate Blue & Contrast White", href: "/products/viral-givenchy-dual-tone-polo-slate-blue" },
-      { label: "Jet Black Dual-Tone", href: "/products/viral-givenchy-dual-tone-polo-jet-black" },
-      { label: "Crimson Maroon Edition", href: "/products/viral-givenchy-dual-tone-polo-crimson-maroon" },
-      { label: "Cream Ivory Contrast", href: "/products/viral-givenchy-dual-tone-polo-cream-ivory" },
+      { label: "Handcrafted Zardozi Collar & Placket", href: "/products/curzon-hall-heritage-champagne-panjabi" },
+      { label: "Matted Gold Metallic Button Details", href: "/products/midnight-obsidian-heritage-zardozi-panjabi" },
+      { label: "Royal Raw Silk & Blended Weaves", href: "/categories/luxury-silk-jacquard" },
     ],
     featured: {
-      title: "Givenchy Dual-Tone Polo",
-      subtitle: "Viral Luxury Pique Edition • 5 Colorways",
-      image: "/assets/762629974_122198626190387293_2940269425792302263_n.jpg",
-      href: "/collections/polo-shirts",
+      title: "Royal Heritage Edition",
+      subtitle: "Opulent hand-embroidery inspired by royal Mughal artistry",
+      image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
+      href: "/categories/royal-heritage",
     },
   },
-  "Drop Shoulder": {
+  "Festive Eid": {
     categories: [
-      { label: "Shop All Drop Shoulder Tees", href: "/collections/drop-shoulder" },
-      { label: "Savage Mode Heavyweight", href: "/collections/drop-shoulder" },
-      { label: "Graphic Streetwear Edition", href: "/collections/drop-shoulder" },
-      { label: "Wholesale 12 Pcs T-Shirt Lot", href: "/collections/wholesale" },
+      { label: "Explore Festive Eid Collection", href: "/categories/festive-eid" },
+      { label: "Terracotta Rust Royal Edition", href: "/products/terracotta-rust-royal-heritage-panjabi" },
+      { label: "Imperial Emerald Green Panjabi", href: "/products/imperial-emerald-green-festive-panjabi" },
+      { label: "Desert Sand Gold Jacquard Panjabi", href: "/products/desert-sand-gold-jacquard-panjabi" },
     ],
     styles: [
-      { label: "Jet Black Savage Mode (240 GSM)", href: "/products/savage-mode-drop-shoulder-tshirt-jet-black" },
-      { label: "Arctic White Savage Mode", href: "/products/savage-mode-drop-shoulder-tshirt-arctic-white" },
-      { label: "Chocolate Mocha Brown", href: "/products/savage-mode-drop-shoulder-tshirt-chocolate-brown" },
+      { label: "Tailored Slim & Classic Comfort Fit", href: "/categories/festive-eid" },
+      { label: "Breathable Premium Combed Fabrics", href: "/categories/classic-cotton" },
+      { label: "Signature Mandarin Collar Finish", href: "/shop" },
     ],
     featured: {
-      title: "Savage Mode Oversized Tee",
-      subtitle: "240+ GSM Compact Combed Cotton • Bio-Washed",
-      image: "/assets/641214084_122183932028387293_6534194091002887335_n.jpg",
-      href: "/collections/drop-shoulder",
+      title: "Festive Eid 2026",
+      subtitle: "Rich warm hues celebrating the joy of Eid",
+      image: "/assets/731093757_122137979318871146_1303986987175253818_n.jpg",
+      href: "/categories/festive-eid",
     },
   },
-  "Wholesale (পাইকারি)": {
+  "Evening Black": {
     categories: [
-      { label: "All Wholesale Lots", href: "/collections/wholesale" },
-      { label: "Viral Polo 6-Pack Lot", href: "/products/viral-polo-wholesale-lot-6pcs" },
-      { label: "Savage Mode 12-Pack Lot", href: "/products/savage-mode-wholesale-lot-12pcs" },
-      { label: "Retail Starter Bundle (20 Pcs)", href: "/products/pulsar-streetwear-retail-starter-bundle-20pcs" },
+      { label: "All Evening & Monochrome Panjabis", href: "/categories/evening-black" },
+      { label: "Midnight Obsidian Zardozi Panjabi", href: "/products/midnight-obsidian-heritage-zardozi-panjabi" },
+      { label: "Regal Charcoal Hand-Embroidered", href: "/products/regal-charcoal-hand-embroidered-panjabi" },
     ],
     styles: [
-      { label: "Nagor Plaza Showroom Visit", href: "/about" },
-      { label: "Call Hotline: 01600911522", href: "tel:01600911522" },
-      { label: "WhatsApp Wholesale Order", href: "https://wa.me/8801600911522" },
+      { label: "Tonal Jet Black Embroidery", href: "/categories/evening-black" },
+      { label: "Sleek Minimalist Cut with Side Slits", href: "/categories/evening-black" },
+      { label: "Velvet Touch Lining & Fine Hemming", href: "/categories/evening-black" },
     ],
     featured: {
-      title: "Factory Direct Wholesale",
-      subtitle: "Shop 85, Ground Floor, Nagor Plaza, Gulistan",
-      image: "/assets/762944474_122198626388387293_7980106767827400939_n.jpg",
-      href: "/collections/wholesale",
+      title: "Obsidian Black Collection",
+      subtitle: "Unmatched sophistication for receptions & festive nights",
+      image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
+      href: "/categories/evening-black",
     },
   },
 };
@@ -98,7 +97,7 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
   const [showAnnouncement, setShowAnnouncement] = useState(true);
 
   useEffect(() => {
-    const isDismissed = localStorage.getItem("pulsar_announcement_dismissed");
+    const isDismissed = localStorage.getItem("lihaaz_announcement_dismissed");
     if (isDismissed) {
       setTimeout(() => setShowAnnouncement(false), 0);
     }
@@ -106,25 +105,25 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
 
   const dismissAnnouncement = () => {
     setShowAnnouncement(false);
-    localStorage.setItem("pulsar_announcement_dismissed", "true");
+    localStorage.setItem("lihaaz_announcement_dismissed", "true");
   };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-xl border-b border-neutral-200 shadow-sm transition-all duration-300">
-      {/* Streetwear Announcement Bar */}
+      {/* Luxury Royal Announcement Bar */}
       {showAnnouncement && (
-        <div className="bg-[#0a0a0a] text-white border-b border-neutral-800 text-center text-[10px] md:text-xs font-semibold tracking-wider py-2 px-6 relative">
+        <div className="bg-[#0f0e0d] text-white border-b border-[#c9a96e]/30 text-center text-[10px] md:text-xs font-medium tracking-wide py-2 px-6 relative">
           <div className="container mx-auto flex items-center justify-center gap-2 truncate">
-            <span className="inline-block px-1.5 py-0.5 rounded bg-amber-500 text-black text-[9px] font-black uppercase tracking-wider">
-              WHOLESALE & RETAIL
+            <span className="inline-block px-2 py-0.5 rounded bg-[#c9a96e] text-black text-[9px] font-black uppercase tracking-widest">
+              GULSHAN STUDIO
             </span>
             <span className="truncate">
-              ⚡ PULSAR FASHION — নাগর প্লাজা, ফুলবাড়িয়া, গুলিস্তান • সারা দেশে ক্যাশ অন ডেলিভারি • WhatsApp: 01600911522
+              👑 LIHAAZ BY MINHAAZ — গুলশান-২ স্টুডিও • সারা দেশে ক্যাশ অন ডেলিভারি ও পার্সেল চেক করার সুবিধা • WhatsApp: {BUSINESS.HOTLINE}
             </span>
           </div>
           <button
             onClick={dismissAnnouncement}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white transition-colors p-1"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-[#c9a96e] transition-colors p-1"
             aria-label="Close announcement"
           >
             <X className="h-3.5 w-3.5" />
@@ -132,29 +131,29 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
         </div>
       )}
 
-      {/* Main Brand Header — 72px */}
+      {/* Main Brand Header — 76px */}
       <div className="relative">
         <div className="container mx-auto px-4 md:px-8 static">
-          <div className="flex h-[72px] items-center justify-between">
+          <div className="flex h-[76px] items-center justify-between">
             {/* Left: Mobile menu + Brand Logo */}
             <div className="flex items-center gap-4">
               <MobileNav links={navLinks} />
               <Link href="/" className="flex items-center gap-3 group">
-                <div className="relative h-11 w-11 rounded-lg overflow-hidden border border-neutral-800 bg-black shadow-md group-hover:scale-105 transition-transform duration-300">
+                <div className="relative h-12 w-12 rounded-full overflow-hidden border-2 border-[#c9a96e]/50 bg-neutral-900 shadow-md group-hover:border-[#c9a96e] group-hover:scale-105 transition-all duration-300">
                   <Image
                     src="/assets/logo.jpg"
-                    alt="Pulsar Fashion Logo"
+                    alt="Lihaaz by Minhaaz Logo"
                     fill
                     className="object-cover"
                     priority
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-heading font-extrabold text-lg md:text-xl tracking-tight text-neutral-900 group-hover:text-black transition-colors uppercase leading-tight">
-                    Pulsar Fashion
+                  <span className="font-heading font-bold text-lg md:text-xl tracking-tight text-neutral-900 group-hover:text-[#c9a96e] transition-colors uppercase leading-tight">
+                    Lihaaz by Minhaaz
                   </span>
-                  <span className="text-[9px] tracking-[0.2em] uppercase font-bold text-neutral-500">
-                    Wholesale & Streetwear
+                  <span className="text-[9px] tracking-[0.25em] uppercase font-semibold text-neutral-500">
+                    Gulshan-2 • Designer Menswear
                   </span>
                 </div>
               </Link>
@@ -177,7 +176,7 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                     key={link.href}
                     href={link.href}
                     prefetch={true}
-                    className="text-[12px] font-bold uppercase tracking-[0.12em] text-neutral-800 hover:text-black py-6 block transition-colors relative after:absolute after:bottom-1.5 after:left-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+                    className="text-[12px] font-semibold uppercase tracking-[0.14em] text-neutral-800 hover:text-[#c9a96e] py-6 block transition-colors relative after:absolute after:bottom-1.5 after:left-0 after:w-full after:h-[2px] after:bg-[#c9a96e] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
                   >
                     {link.label}
                   </Link>
@@ -185,17 +184,17 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
               })}
             </nav>
 
-            {/* Right: Hotline Call + Search + Cart + User */}
+            {/* Right: Studio WhatsApp + Search + Cart + User */}
             <div className="flex items-center gap-2">
               <a
-                href="https://wa.me/8801600911522"
+                href={BUSINESS.WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold border border-emerald-200 transition-colors"
-                title="WhatsApp Order"
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#faf6ef] hover:bg-[#f3ebd9] text-[#8e6e30] text-xs font-bold border border-[#c9a96e]/40 transition-colors shadow-xs"
+                title="Studio WhatsApp Concierge"
               >
-                <PhoneCall className="h-3.5 w-3.5 text-emerald-600" />
-                <span>01600911522</span>
+                <PhoneCall className="h-3.5 w-3.5 text-[#c9a96e]" />
+                <span>{BUSINESS.HOTLINE}</span>
               </a>
               <SearchBar />
               <CartButton />

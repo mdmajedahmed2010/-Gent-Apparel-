@@ -296,7 +296,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             Order Confirmed!
           </h2>
           <p className="text-xs text-muted-foreground uppercase tracking-widest max-w-md mx-auto leading-relaxed font-semibold">
-            Thank you for choosing Pulsar Fashion. Our customer support team will call you shortly to confirm
+            Thank you for choosing Lihaaz by Minhaaz. Our Gulshan-2 studio concierge team will call you shortly to confirm
             your delivery details.
           </p>
         </div>
@@ -875,17 +875,17 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                   <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("PULSAR10")}
+                      onClick={() => handleApplyCoupon("LIHAAZ10")}
                       className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-accent text-accent hover:bg-accent/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      PULSAR10 (10% OFF)
+                      LIHAAZ10 (10% OFF)
                     </button>
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("EID2026")}
+                      onClick={() => handleApplyCoupon("ROYAL500")}
                       className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-accent text-accent hover:bg-accent/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      EID2026 (Flat ৳200)
+                      ROYAL500 (Flat ৳500)
                     </button>
                   </div>
                 </div>

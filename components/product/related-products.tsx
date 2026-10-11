@@ -1,6 +1,6 @@
 /**
- * PULSAR FASHION — Related Products Section
- * "You May Also Like" — Streetwear recommendations & color variants
+ * LIHAAZ BY MINHAAZ — Related Products Section
+ * "You May Also Like" — Royal Heritage Punjabi recommendations & color variants
  */
 
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -59,10 +59,10 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
     console.error("[RELATED_PRODUCTS] Database error:", err);
   }
 
-  // 3. Guaranteed Pulsar Fashion fallback products from inventory
+  // 3. Guaranteed Lihaaz by Minhaaz fallback products from inventory
   const filteredDemos = ALL_PRODUCTS.filter((p) => p.id !== currentProductId);
   const sameCategoryDemos = filteredDemos.filter(
-    (p) => p.category?.toLowerCase().includes(categorySlug.toLowerCase()) || categorySlug.includes("polo")
+    (p) => p.categorySlug?.toLowerCase().includes(categorySlug.toLowerCase()) || categorySlug.includes("royal")
   );
   const fallbackList = sameCategoryDemos.length >= 4 
     ? sameCategoryDemos.slice(0, 4)
@@ -72,23 +72,23 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
     dbProducts.length > 0
       ? dbProducts.map((p: any, i: number) => {
           const prices = p.variants?.map((v: any) => Number(v.price)) || [];
-          const minPrice = prices.length > 0 ? Math.min(...prices) : Number(p.basePrice || 750);
+          const minPrice = prices.length > 0 ? Math.min(...prices) : Number(p.basePrice || 4850);
 
           const firstVariant: any = p.variants?.[0];
           const variantImages = firstVariant?.images;
           const image =
             Array.isArray(variantImages) && variantImages.length > 0
               ? (variantImages[0] as string)
-              : (fallbackList[i]?.image || `/assets/asset-${(i % 10) + 1}.jpg`);
+              : (fallbackList[i]?.image || "/assets/banner.jpg");
 
           return {
             id: p.id,
             name: p.name,
             slug: p.slug,
             price: minPrice,
-            compareAtPrice: Math.round(minPrice * 1.3),
+            compareAtPrice: Math.round(minPrice * 1.2),
             image,
-            category: p.category?.name || "Pulsar Streetwear",
+            category: p.category?.name || "Royal Heritage",
             isNew: false,
           };
         })
@@ -98,7 +98,7 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
     <section className="mt-16 md:mt-20 border-t border-border/40 pt-12">
       <SectionHeading
         title="You May Also Like"
-        subtitle="More from Pulsar Fashion Collection"
+        subtitle="More from Lihaaz by Minhaaz Collection"
         viewAllHref={categorySlug ? `/categories/${categorySlug}` : "/shop"}
       />
 

@@ -46,11 +46,11 @@ export function NewsletterSection() {
         <p className="text-[11px] uppercase tracking-[0.3em] text-[#c9a96e] font-medium mb-3">
           Stay Updated
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3">
-          Join the Pulsar Fashion Circle
+        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3 font-heading">
+          Join the Lihaaz Royal Circle
         </h2>
-        <p className="text-sm text-white/50 max-w-sm mx-auto mb-8">
-          Subscribe for exclusive streetwear drops, new arrivals, and wholesale offers.
+        <p className="text-sm text-white/60 max-w-sm mx-auto mb-8 font-sans">
+          Subscribe for exclusive royal heritage Panjabi drops, new festive collections, and private preview offers.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

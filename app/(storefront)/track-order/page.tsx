@@ -8,8 +8,8 @@ import type { Metadata } from "next";
 import { TrackOrderForm } from "@/components/order/track-order-form";
 
 export const metadata: Metadata = {
-  title: "Track Your Order — Pulsar Fashion",
-  description: "Track your Pulsar Fashion order status with your order number and phone.",
+  title: "Track Your Order — Lihaaz by Minhaaz",
+  description: "Track your Lihaaz by Minhaaz Panjabi order status with your order number and phone.",
 };
 
 export default function TrackOrderPage() {

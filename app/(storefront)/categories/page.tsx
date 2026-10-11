@@ -8,9 +8,9 @@ import { CATEGORIES } from "@/lib/demo-data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "All Categories — Pulsar Fashion",
+  title: "All Categories — Lihaaz by Minhaaz | পাঞ্জাবি ক্যাটাগরি সমূহ",
   description:
-    "Browse all Pulsar Fashion streetwear categories — Viral Polo Shirts, Drop Shoulder T-Shirts, Club & Street Jerseys, Hoodies & Winter Wear, and Wholesale Lots.",
+    "Browse all Lihaaz by Minhaaz Panjabi categories — Royal Heritage & Wedding Edition, Festive Eid Collection, Classic Signature Cotton, Evening Obsidian Black, and Luxury Raw Silk Jacquard.",
 };
 
 type CategoryItem = {
@@ -56,14 +56,14 @@ export default async function CategoriesPage() {
         {/* Header */}
         <div className="mt-10 mb-14 text-center">
           <span className="inline-block px-3.5 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/10 text-[#0f0e0d] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ PULSAR FASHION COLLECTIONS ✦
+            ✦ LIHAAZ ROYAL HERITAGE ✦
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f0e0d] font-heading">
             All Categories
           </h1>
           <div className="w-20 h-[2px] bg-[#c9a96e] mx-auto mt-5" />
           <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            আমাদের অফিসিয়াল ক্যাটাগরিগুলো ঘুরে দেখুন—ভাইরাল পোলো, হেভিওয়েট ড্রপ শোল্ডার, স্পোর্টস জার্সি এবং পাইকারি বান্ডেল।
+            গুলশান-২ ডিজাইন স্টুডিওর অফিসিয়াল ক্যাটাগরিগুলো ঘুরে দেখুন—রয়্যাল হেরিটেজ, ফেস্টিভ ঈদ, লাক্সারি সিল্ক এবং ক্ল্যাসিক কটন পাঞ্জাবি।
           </p>
         </div>
 
@@ -87,12 +87,12 @@ export default async function CategoriesPage() {
 
               <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 z-20">
                 <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#c9a96e]/20 border border-[#c9a96e]/40 text-[#e8ce9e] text-[9.5px] uppercase tracking-[0.24em] font-bold mb-2.5">
-                  ✦ {cat._count?.products ?? 5} Products
+                  ✦ {cat._count?.products ?? 4} Panjabis
                 </span>
                 <h2 className="text-xl md:text-2xl font-bold font-heading text-white group-hover:text-[#e8ce9e] transition-colors leading-tight">
                   {cat.name}
                 </h2>
-                <span className="text-[11px] text-[#e8ce9e] uppercase tracking-[0.16em] font-bold mt-3 inline-flex items-center gap-1.5 group-hover:translate-x-1.5 transition-transform">
+                <span className="text-[11px] text-[#e8ce9e] uppercase tracking-[0.16em] font-bold mt-3 inline-flex items-center gap-1.5 group-hover:translate-x-1.5 transition-transform font-sans">
                   Explore Category →
                 </span>
               </div>

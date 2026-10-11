@@ -38,7 +38,7 @@ export default async function StorefrontLayout({ children }: { children: React.R
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801600911522" messengerUrl="https://m.me/61561618804910" />
+      <FloatingChat phoneNumber="8801755627874" messengerUrl="https://m.me/lihaazbyminhaaz" />
       <MobileBottomNav />
       <PageTracker />
     </>
@@ -70,11 +70,11 @@ function MaintenancePage() {
           Scheduled Maintenance
         </h1>
         <p className="text-gray-500 text-sm leading-relaxed">
-          Pulsar Fashion is currently undergoing scheduled updates to provide you with the best streetwear
+          Lihaaz by Minhaaz is currently undergoing scheduled updates to provide you with the best royal heritage
           experience. We will be back online shortly. Thank you for your patience!
         </p>
         <div className="pt-6 border-t border-gray-200 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Pulsar Fashion. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Lihaaz by Minhaaz. All rights reserved.</p>
         </div>
       </div>
     </div>

@@ -4,8 +4,8 @@ import { ProductCard } from "@/components/product/product-card";
 import { getProducts } from "@/actions/product.actions";
 
 export const metadata: Metadata = {
-  title: "Search Products — Pulsar Fashion",
-  description: "Search Pulsar Fashion streetwear, viral polo shirts, drop shoulder tees, and jerseys.",
+  title: "Search Panjabis — Lihaaz by Minhaaz",
+  description: "Search Lihaaz by Minhaaz royal heritage Panjabis, festive Eid collections, raw silk, and embroidered attire.",
 };
 
 interface SearchPageProps {
