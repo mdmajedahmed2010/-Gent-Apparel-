@@ -75,7 +75,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
   const [errors, setErrors] = useState<Partial<Record<keyof AddressData, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [orderPlaced, setOrderPlaced] = useState(false);
-  const [placedOrderNumber, setPlacedOrderNumber] = useState("ORD-2026-00001");
+  const [placedOrderNumber, setPlacedOrderNumber] = useState("GA-2026-00001");
   const [confirmedTotal, setConfirmedTotal] = useState<number>(0);
 
   // Coupon State
@@ -296,8 +296,8 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             Order Confirmed!
           </h2>
           <p className="text-xs text-muted-foreground uppercase tracking-widest max-w-md mx-auto leading-relaxed font-semibold">
-            Thank you for choosing Lihaaz by Minhaaz. Our Gulshan-2 studio concierge team will call you shortly to confirm
-            your delivery details.
+            Thank you for choosing Gent Apparel BD. Our order confirmation team will contact you shortly to confirm
+            your delivery details. (হটলাইন ও WhatsApp: 01560-018131)
           </p>
         </div>
 
@@ -506,7 +506,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                 value={address.area}
                 onChange={(e) => setAddress({ ...address, area: e.target.value })}
                 className="w-full h-11 px-4 border border-border/60 bg-white text-sm transition-all focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent rounded-sm placeholder:text-muted-foreground/30 font-medium text-foreground hover:border-accent/40"
-                placeholder="e.g. Gulshan, Mirpur, Savar, etc."
+                placeholder="e.g. Lalbagh, Dhanmondi, Mirpur, etc."
               />
               {errors.area && (
                 <p className="text-[10px] text-sale font-bold uppercase tracking-wider mt-1 flex items-center gap-1">
@@ -643,7 +643,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                   <div className="flex items-center gap-1.5 p-2.5 bg-pink-50 text-pink-700 rounded-sm border border-pink-100">
                     <PhoneCall className="h-4 w-4 shrink-0" />
                     <p className="text-[10px] uppercase tracking-wider font-bold">
-                      Send Money to: 017XXXXXXXX (Personal)
+                      Send Money to: 01560-018131 (Personal / Merchant)
                     </p>
                   </div>
                   
@@ -715,7 +715,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                   <div className="flex items-center gap-1.5 p-2.5 bg-orange-50 text-orange-700 rounded-sm border border-orange-100">
                     <PhoneCall className="h-4 w-4 shrink-0" />
                     <p className="text-[10px] uppercase tracking-wider font-bold">
-                      Send Money to: 017XXXXXXXX (Personal)
+                      Send Money to: 01560-018131 (Personal / Merchant)
                     </p>
                   </div>
                   
@@ -875,17 +875,17 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                   <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("LIHAAZ10")}
+                      onClick={() => handleApplyCoupon("GENT10")}
                       className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-accent text-accent hover:bg-accent/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      LIHAAZ10 (10% OFF)
+                      GENT10 (10% OFF)
                     </button>
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("ROYAL500")}
+                      onClick={() => handleApplyCoupon("WELCOME100")}
                       className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-accent text-accent hover:bg-accent/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      ROYAL500 (Flat ৳500)
+                      WELCOME100 (Flat ৳100)
                     </button>
                   </div>
                 </div>
@@ -956,7 +956,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             disabled={isSubmitting}
             className="flex items-center justify-center w-full h-13 bg-foreground hover:bg-neutral-800 text-background font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 disabled:opacity-40 cursor-pointer shadow-md rounded-sm active:scale-98 animate-pulse-glow"
           >
-            {isSubmitting ? "Processing Luxury Order..." : "Confirm & Place Order"}
+            {isSubmitting ? "Placing Order..." : "Confirm & Place Order"}
           </button>
 
           {/* Trust assurances for Bangladeshi consumers */}
@@ -964,7 +964,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="h-4 w-4 text-accent shrink-0" />
               <span className="text-[8px] text-muted-foreground uppercase tracking-widest font-semibold leading-normal">
-                100% Genuine Fabrics
+                100% Export Quality
               </span>
             </div>
             <div className="flex items-center gap-1.5">

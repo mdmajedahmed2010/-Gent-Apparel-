@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%" fill="none">
-  <rect width="600" height="750" fill="#0f0e0d" />
-  <rect x="20" y="20" width="560" height="710" stroke="#c9a96e" stroke-width="1.5" stroke-opacity="0.4" />
+  <rect width="600" height="750" fill="#0a0a0a" />
+  <rect x="20" y="20" width="560" height="710" stroke="#c8a265" stroke-width="1.5" stroke-opacity="0.4" />
   <g transform="translate(300, 360)" text-anchor="middle">
-    <text font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" letter-spacing="8" fill="#faf8f4">LIHAAZ</text>
-    <text y="32" font-family="'Inter', sans-serif" font-size="12" font-weight="600" letter-spacing="6" fill="#c9a96e">ROYAL HERITAGE COUTURE</text>
-    <text y="58" font-family="'Inter', sans-serif" font-size="10" font-weight="400" letter-spacing="3" fill="#a8a29e">HOUSE-5, ROAD 54/A, GULSHAN-2, DHAKA</text>
+    <text font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="32" font-weight="700" letter-spacing="6" fill="#faf8f4">GENT APPAREL BD</text>
+    <text y="32" font-family="'Inter', sans-serif" font-size="12" font-weight="600" letter-spacing="6" fill="#c8a265">BETTER QUALITY, BETTER STYLE!</text>
+    <text y="58" font-family="'Inter', sans-serif" font-size="10" font-weight="400" letter-spacing="3" fill="#a8a29e">LALBAGH, DHAKA-1211, BANGLADESH</text>
   </g>
 </svg>

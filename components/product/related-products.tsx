@@ -1,6 +1,6 @@
 /**
- * LIHAAZ BY MINHAAZ — Related Products Section
- * "You May Also Like" — Royal Heritage Punjabi recommendations & color variants
+ * GENT APPAREL BD — Related Products Section
+ * "You May Also Like" — Authentic Export Clothing recommendations
  */
 
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -59,10 +59,10 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
     console.error("[RELATED_PRODUCTS] Database error:", err);
   }
 
-  // 3. Guaranteed Lihaaz by Minhaaz fallback products from inventory
+  // 3. Guaranteed Gent Apparel BD fallback products from inventory
   const filteredDemos = ALL_PRODUCTS.filter((p) => p.id !== currentProductId);
   const sameCategoryDemos = filteredDemos.filter(
-    (p) => p.categorySlug?.toLowerCase().includes(categorySlug.toLowerCase()) || categorySlug.includes("royal")
+    (p) => p.categorySlug?.toLowerCase().includes(categorySlug.toLowerCase()) || categorySlug.includes("denim")
   );
   const fallbackList = sameCategoryDemos.length >= 4 
     ? sameCategoryDemos.slice(0, 4)
@@ -88,7 +88,7 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
             price: minPrice,
             compareAtPrice: Math.round(minPrice * 1.2),
             image,
-            category: p.category?.name || "Royal Heritage",
+            category: p.category?.name || "Export Menswear",
             isNew: false,
           };
         })
@@ -98,7 +98,7 @@ export async function RelatedProducts({ categorySlug, currentProductId }: Relate
     <section className="mt-16 md:mt-20 border-t border-border/40 pt-12">
       <SectionHeading
         title="You May Also Like"
-        subtitle="More from Lihaaz by Minhaaz Collection"
+        subtitle="More from Gent Apparel BD Export Edits"
         viewAllHref={categorySlug ? `/categories/${categorySlug}` : "/shop"}
       />
 

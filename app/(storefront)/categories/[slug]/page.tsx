@@ -22,10 +22,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const cat = CATEGORIES.find((c) => c.slug === slug);
-  const title = cat ? `${cat.name} — Lihaaz by Minhaaz` : "Panjabi Category — Lihaaz by Minhaaz";
+  const title = cat ? `${cat.name} — Gent Apparel BD` : "Export Category — Gent Apparel BD";
   return {
     title,
-    description: cat?.description || "Browse Lihaaz by Minhaaz royal heritage Panjabi collection",
+    description: cat?.description || "Browse Gent Apparel BD authentic export menswear collection",
   };
 }
 
@@ -65,11 +65,11 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   const categoryMeta = CATEGORIES.find((c) => c.slug === slug) || {
     name: slug.replace(/-/g, " ").toUpperCase(),
-    description: "Lihaaz by Minhaaz royal heritage collection",
+    description: "Gent Apparel BD authentic export menswear collection",
   };
 
   return (
-    <div className="min-h-screen bg-[#fdfcfa]">
+    <div className="min-h-screen bg-[#fdfcfa] dark:bg-background">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         <Breadcrumb
           items={[
@@ -80,13 +80,13 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
         {/* Header */}
         <div className="mt-8 mb-10 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/10 text-[#0f0e0d] text-[10px] uppercase tracking-[0.28em] font-bold mb-3">
-            ✦ LIHAAZ ROYAL CATEGORY ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#c8a265]/50 bg-[#c8a265]/10 text-foreground text-[10px] uppercase tracking-[0.28em] font-bold mb-3">
+            ✦ GENT APPAREL BD CATEGORY ✦
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-[#0f0e0d] font-heading capitalize">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground font-heading capitalize">
             {categoryMeta.name}
           </h1>
-          <div className="w-16 h-[2px] bg-[#c9a96e] mx-auto mt-4" />
+          <div className="w-16 h-[2px] bg-[#c8a265] mx-auto mt-4" />
           <p className="text-muted-foreground mt-3 text-xs md:text-sm max-w-lg mx-auto font-sans">
             {categoryMeta.description}
           </p>

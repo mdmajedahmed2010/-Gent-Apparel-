@@ -2,9 +2,10 @@
 "use client";
 
 /**
- * LIHAAZ BY MINHAAZ — Home UI Orchestrator
- * High-fashion royal menswear experience with lazy-loaded below-fold sections.
- * Studio: House-5, Road 54/A, Gulshan-2, Dhaka
+ * GENT APPAREL BD — Home UI Orchestrator
+ * Better Quality, Better Style!
+ * High-fashion menswear experience with lazy-loaded below-fold sections.
+ * Lalbagh, Dhaka-1211 | Hotline / WhatsApp: 01560-018131
  */
 
 import dynamic from "next/dynamic";
@@ -142,89 +143,89 @@ const EditorialSection = dynamic(
 const defaultHeroSlides: HeroSlide[] = [
   {
     image: "/assets/banner.jpg",
-    title: "CURZON HALL ROYAL HERITAGE",
-    subtitle: "Opulent Champagne, Obsidian Black & Terracotta Rust Panjabis with handcrafted zardozi embroidery.",
-    link: "/categories/royal-heritage",
-    overline: "EID & WEDDING COUTURE 2026",
+    title: "BETTER QUALITY, BETTER STYLE!",
+    subtitle: "১০০% আসল এক্সপোর্ট ডেনিম জিন্স, সি ব্যারিয়ার ইতালিয়ান চিনো এবং আন্তর্জাতিক স্পোর্টসওয়্যার।",
+    link: "/shop",
+    overline: "GENT APPAREL BD — LALBAGH, DHAKA",
+    color: "from-black/85",
+  },
+  {
+    image: "/assets/lucky-brand-light-wash.jpg",
+    title: "SUPER PREMIUM EXPORT DENIM",
+    subtitle: "Lucky Brand, Sea Barrier & IL Granchio ইতালিয়ান কমফোর্ট স্ট্রেচ জিন্সের সেরা কালেকশন।",
+    link: "/categories/denim-jeans",
+    overline: "100% AUTHENTIC EXPORT PIECES",
     color: "from-black/80",
   },
   {
-    image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
-    title: "CHAMPAGNE ROYAL ZARDOZI",
-    subtitle: "Exquisite metallic threadwork on regal silk blend fabric with signature bespoke tailoring.",
-    link: "/products/curzon-hall-heritage-champagne-panjabi",
-    overline: "MASTERPIECE EDITION",
-    color: "from-black/75",
-  },
-  {
-    image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
-    title: "MIDNIGHT OBSIDIAN BLACK",
-    subtitle: "Intricate tonal and matted gold embroidery designed for unforgettable evening celebrations.",
-    link: "/products/midnight-obsidian-heritage-zardozi-panjabi",
-    overline: "EVENING & RECEPTION COUTURE",
-    color: "from-black/75",
+    image: "/assets/lincoln-quarter-zip-pullover.jpg",
+    title: "WINTER IS BACK 2026",
+    subtitle: "Lincoln UK লেয়ার্ড কলার নিট পুলওভার ও Slazenger অরিজিনাল ব্রাশড ফ্লিস ট্র্যাক প্যান্ট ড্রপ।",
+    link: "/collections/winter-is-back",
+    overline: "SEASONAL WINTER COLLECTION",
+    color: "from-black/80",
   },
 ];
 
 const defaultCollections: CollectionShowcaseItem[] = [
   {
-    title: "Royal Heritage & Wedding",
-    image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
-    href: "/categories/royal-heritage",
-    tag: "CURZON HALL WEDDING EDITION",
+    title: "Original Export Denim",
+    image: "/assets/lucky-brand-dark-indigo.jpg",
+    href: "/categories/denim-jeans",
+    tag: "LUCKY BRAND & SEA BARRIER",
   },
   {
-    title: "Festive Eid Collection",
-    image: "/assets/731093757_122137979318871146_1303986987175253818_n.jpg",
-    href: "/categories/festive-eid",
-    tag: "FESTIVE EID 2026 DROPS",
+    title: "Italian Gabardine & Chinos",
+    image: "/assets/sea-barrier-chino-pants.jpg",
+    href: "/categories/gabardine-chinos",
+    tag: "EXTRA COMFORT FLEX",
   },
   {
-    title: "Classic Signature Cotton",
-    image: "/assets/730084646_122134599422871146_2384218671751147055_n.jpg",
-    href: "/categories/classic-cotton",
-    tag: "PREMIUM COMBED COTTON",
+    title: "Activewear & Joggers",
+    image: "/assets/slazenger-stripe-trackpants.jpg",
+    href: "/categories/joggers-activewear",
+    tag: "SLAZENGER ATHLETIC TROUSERS",
   },
   {
-    title: "Evening Obsidian Black",
-    image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
-    href: "/categories/evening-black",
-    tag: "JET BLACK ZARDOZI EMBROIDERY",
+    title: "Winter Is Back 2026",
+    image: "/assets/lincoln-quarter-zip-pullover.jpg",
+    href: "/collections/winter-is-back",
+    tag: "LINCOLN UK KNITWEAR DROPS",
   },
   {
-    title: "Luxury Silk & Jacquard",
-    image: "/assets/728570183_122134599722871146_7459141703632616239_n.jpg",
-    href: "/categories/luxury-silk-jacquard",
-    tag: "RAW SILK & WOVEN JACQUARD",
+    title: "Italian Attitude Series",
+    image: "/assets/sea-barrier-raw-indigo.jpg",
+    href: "/collections/italian-attitude",
+    tag: "CONTINENTAL LUXURY CUT",
   },
   {
-    title: "Desert Sand Gold Jacquard",
-    image: "/assets/731111670_122137979378871146_3792348301777002016_n.jpg",
-    href: "/products/desert-sand-gold-jacquard-panjabi",
-    tag: "WARM GOLDEN METALLIC ACCENTS",
+    title: "Athletic Streetwear",
+    image: "/assets/slazenger-cuffed-joggers.jpg",
+    href: "/collections/athletic-streetwear",
+    tag: "EVERYDAY COMFORT JOGGERS",
   },
 ];
 
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Lihaaz by Minhaaz-এর Curzon Hall Champagne Panjabi-টি আমার ভাইয়ের ওয়েডিং রিসেপশনে পরেছিলাম। কলারের জারদৌসি এমব্রয়ডারি ও সিল্কের ড্র্যাপ এক কথায় অনন্য। ডেলিভারিতে পার্সেল চেক করে পেমেন্ট করার সুবিধা খুবই চমৎকার।",
-    author: "ব্যারিস্টার আহমেদ জাওয়াদ",
-    designation: "Gulshan-2, Dhaka — Verified Client",
+      "লাকি ব্র্যান্ডের ১২১ স্লিম স্ট্রেইট জিন্সটা হাতে পেয়ে সত্যি দারুণ লেগেছে। কাপড় ও ফিটিং ১০০% জেনুইন এক্সপোর্ট স্ট্যান্ডার্ড। আর ডেলিভারি ম্যানের সামনে পার্সেল খুলে চেক করে নেওয়ার সুবিধা থাকায় কোনো টেনশনই ছিল না।",
+    author: "তানভীর আহমেদ",
+    designation: "Dhanmondi, Dhaka — Verified Customer",
     stars: 5,
   },
   {
     quote:
-      "গুলশান-২ স্টুডিও ভিজিট করে পাঞ্জাবিটির ট্রায়াল দিয়েছিলাম। ফিটিং একদম মাস্টার কাট আর কাপড়ের আরাম অতুলনীয়। ঈদের জন্য এমন রাজকীয় পোশাকের কোনো বিকল্প নেই।",
-    author: "ড. সাজিদুর রহমান",
-    designation: "Banani, Dhaka — Verified Client",
+      "সি ব্যারিয়ার ইতালিয়ান চিনো প্যান্টটা অফিসে পরার জন্য এককথায় অসাধারণ। যেমন সফট ফ্যাব্রিক তেমনি আরামদায়ক ফ্লেক্স। জেন্ট অ্যাপারেল বিডি আসলেই বেটার কোয়ালিটি নিশ্চিত করে।",
+    author: "ইঞ্জিনিয়ার রাফিদ হাসান",
+    designation: "Lalbagh, Dhaka — Verified Customer",
     stars: 5,
   },
   {
     quote:
-      "চট্টগ্রামে হোম ডেলিভারি নিয়েছিলাম। ৪৮ ঘণ্টার মধ্যে ইনট্যাক্ট পার্সেল পেয়েছি। Midnight Obsidian Black পাঞ্জাবিটির রয়্যাল লুক ছবিতে যেমন দেখেছি বাস্তবে আরও সুন্দর।",
-    author: "তানভীর হাসান চৌধুরী",
-    designation: "Khulshi, Chattogram — Verified Client",
+      "স্ল্যাজেঞ্জার অরিজিনাল ট্র্যাক প্যান্ট আর লিংকন ইউকে সোয়েটার অর্ডার করেছিলাম। ঢাকার বাইরে রাজশাহীতে মাত্র ২ দিনে অক্ষত অবস্থায় কুরিয়ারে পেয়েছি। কাপড়ের মান টপ নচ!",
+    author: "সাকিব আল মাহমুদ",
+    designation: "Rajshahi — Verified Customer",
     stars: 5,
   },
 ];
@@ -254,7 +255,7 @@ export function HomeUI({
   /* ── Map products to UI (always fallback to ALL_PRODUCTS if empty) ── */
   const sourceProducts = dbProducts && dbProducts.length > 0 ? dbProducts : ALL_PRODUCTS;
   const mappedProducts: ArrivalsProduct[] = sourceProducts.slice(0, 8).map((p: any, i: number) => {
-    const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.price || p.basePrice || 4850);
+    const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.price || p.basePrice || 1450);
     const variantImages = p.variants?.[0]?.images;
     const prodImg =
       Array.isArray(variantImages) && variantImages.length > 0
@@ -266,41 +267,41 @@ export function HomeUI({
       name: p.name,
       slug: p.slug,
       price: variantPrice,
-      compareAtPrice: p.compareAtPrice || Math.round(variantPrice * 1.2),
+      compareAtPrice: p.compareAtPrice || Math.round(variantPrice * 1.5),
       image: prodImg,
-      category: p.category?.name || p.category || "Royal Heritage",
+      category: p.category?.name || p.category || "Original Export Denim",
       isNew: p.isNew ?? true,
     };
   });
 
-  /* ── Lookbook looks (authentic Lihaaz products) ── */
+  /* ── Lookbook looks (authentic Gent Apparel products) ── */
   const lookbookLooks: LookbookLook[] = [
     {
       id: "look1",
-      image: "/assets/731105183_122137979606871146_8917897017688220084_n.jpg",
-      title: "Royal Heritage & Wedding",
-      subtitle: "Curzon Hall Heritage Champagne Panjabi",
-      slug: "curzon-hall-heritage-champagne-panjabi",
-      price: 4850,
-      tag: "ROYAL MASTERPIECE",
+      image: "/assets/lucky-brand-light-wash.jpg",
+      title: "Original Export Denim",
+      subtitle: "Lucky Brand 121 Heritage Slim Straight Light Wash",
+      slug: "lucky-brand-121-slim-straight-light-wash-denim",
+      price: 1450,
+      tag: "USA EXPORT PIECE",
     },
     {
       id: "look2",
-      image: "/assets/731173450_122137979432871146_6950294711652391069_n.jpg",
-      title: "Evening Obsidian Black",
-      subtitle: "Midnight Obsidian Heritage Zardozi Panjabi",
-      slug: "midnight-obsidian-heritage-zardozi-panjabi",
-      price: 5450,
-      tag: "COUTURE BLACK",
+      image: "/assets/sea-barrier-raw-indigo.jpg",
+      title: "Italian Attitude Series",
+      subtitle: "Sea Barrier Italian Attitude Raw Indigo Straight Jeans",
+      slug: "sea-barrier-italian-attitude-raw-indigo-straight-jeans",
+      price: 1550,
+      tag: "ITALIAN HERITAGE",
     },
     {
       id: "look3",
-      image: "/assets/731093757_122137979318871146_1303986987175253818_n.jpg",
-      title: "Festive Eid Collection",
-      subtitle: "Terracotta Rust Royal Heritage Panjabi",
-      slug: "terracotta-rust-royal-heritage-panjabi",
-      price: 4950,
-      tag: "WARM EARTH TONE",
+      image: "/assets/lincoln-quarter-zip-pullover.jpg",
+      title: "Winter Is Back 2026",
+      subtitle: "Lincoln UK Layered Mock Quarter-Zip Knit Pullover",
+      slug: "lincoln-uk-layered-mock-collar-quarter-zip-knit-pullover",
+      price: 1490,
+      tag: "UK EXPORT EDITION",
     },
   ];
 
@@ -312,8 +313,8 @@ export function HomeUI({
           title: banner.title || "",
           subtitle: banner.subtitle || "",
           link: banner.content?.link || "/shop",
-          overline: banner.content?.overline || "ROYAL HERITAGE",
-          color: banner.content?.color || "from-black/80",
+          overline: banner.content?.overline || "GENT APPAREL BD",
+          color: banner.content?.color || "from-black/85",
         }))
       : defaultHeroSlides;
 
@@ -345,7 +346,7 @@ export function HomeUI({
       {/* 4. LOOKBOOK / EDITORIAL SHOWCASE */}
       <LookbookSection looks={lookbookLooks} />
 
-      {/* 5. TRENDING PANJABIS / PRODUCTS SECTION */}
+      {/* 5. TRENDING / NEW ARRIVALS PRODUCTS SECTION */}
       <NewArrivalsGrid products={mappedProducts} />
 
       {/* 6. ALL COLLECTIONS */}

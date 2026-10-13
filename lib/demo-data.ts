@@ -1,7 +1,7 @@
 /**
- * LIHAAZ BY MINHAAZ — Authentic Product Catalog & Demo Data
- * Grounded on Facebook Page: https://www.facebook.com/lihaazbyminhaaz/
- * High-Resolution Photographic Assets from /assets/
+ * GENT APPAREL BD — Authentic Product Catalog & Demo Data
+ * Grounded on Facebook Page: https://www.facebook.com/gentapparelbd
+ * High-Resolution Photographic Assets from /assets/gent/ and /assets/
  */
 
 import type { ProductCardProps } from "@/components/product/product-card";
@@ -11,45 +11,80 @@ import type { ProductCardProps } from "@/components/product/product-card";
 // ═══════════════════════════════════════════
 export const CATEGORIES = [
   {
-    name: "Royal Heritage & Wedding",
-    slug: "royal-heritage",
-    description: "Architectural Mughal Chikankari, Zari threadwork and heirloom bridal menswear",
-    image: "/assets/731105183_1007378862271175_2839197506608792838_n.jpg",
+    name: "Original Export Denim",
+    slug: "denim-jeans",
+    description: "100% authentic surplus jeans from Lucky Brand, Sea Barrier, Il Granchio and Aeropostale.",
+    image: "/assets/lucky-brand-light-wash.jpg",
+    productCount: 6,
+  },
+  {
+    name: "Italian Gabardine & Chinos",
+    slug: "gabardine-chinos",
+    description: "Tailored luxury twill trousers with extra comfort flex from Sea Barrier Italy.",
+    image: "/assets/sea-barrier-chino-pants.jpg",
+    productCount: 1,
+  },
+  {
+    name: "Activewear & Joggers",
+    slug: "joggers-activewear",
+    description: "Slazenger export edition athletic track pants, side-striped trousers & joggers.",
+    image: "/assets/slazenger-stripe-trackpants.jpg",
     productCount: 2,
   },
   {
-    name: "Festive Eid Collection",
-    slug: "festive-eid",
-    description: "Raw silk jacquards, shimmering champagne tones and ornate festive panjabis",
-    image: "/assets/731173450_1008107675531627_7884714671446302908_n.jpg",
-    productCount: 3,
+    name: "Sweaters & Winter Drops",
+    slug: "sweaters-winter",
+    description: "Lincoln UK layered mock-collar knitwear, pullovers & winter essentials.",
+    image: "/assets/lincoln-quarter-zip-pullover.jpg",
+    productCount: 1,
   },
   {
-    name: "Classic Signature Cotton",
-    slug: "classic-cotton",
-    description: "Fine Egyptian Giza cotton, muslin chikankari and bespoke damask accents",
-    image: "/assets/728570183_1003994135942981_1995203835787078592_n.jpg",
+    name: "Casual Polos & Co-Ords",
+    slug: "polos-casual-wear",
+    description: "Contemporary lifestyle polos, technical cargo joggers & urban coordinates.",
+    image: "/assets/banner.jpg",
+    productCount: 2,
+  },
+];
+
+// ═══════════════════════════════════════════
+// Collections
+// ═══════════════════════════════════════════
+export const COLLECTIONS = [
+  {
+    name: "Winter Is Back 2026",
+    slug: "winter-is-back",
+    description: "Heavyweight export knits, quarter-zips, brushed fleece joggers and raw denim drops.",
+    image: "/assets/lincoln-quarter-zip-pullover.jpg",
     productCount: 4,
   },
   {
-    name: "Evening & Black Edition",
-    slug: "evening-black",
-    description: "Deep obsidian silk-cotton with subtle tonal sequin work and antique crest studs",
-    image: "/assets/731111670_1005638735778521_305236285496504724_n.jpg",
-    productCount: 2,
+    name: "Super Premium Export Denim",
+    slug: "super-premium-denim",
+    description: "Curated international denim drops with authentic washes, rivets, and flex comfort.",
+    image: "/assets/lucky-brand-dark-indigo.jpg",
+    productCount: 6,
   },
   {
-    name: "Luxury Silk & Jacquard",
-    slug: "luxury-silk-jacquard",
-    description: "Vintage Persian medallion weaves, fine tapestry and concealed plackets",
-    image: "/assets/727886407_1003812822627779_5320585349107522996_n.jpg",
-    productCount: 2,
+    name: "Italian Attitude Series",
+    slug: "italian-attitude",
+    description: "Classic Italian craftsmanship, genuine leather badges and extra comfort chinos.",
+    image: "/assets/sea-barrier-raw-indigo.jpg",
+    productCount: 3,
+  },
+  {
+    name: "Athletic Leisure & Streetwear",
+    slug: "athletic-streetwear",
+    description: "Slazenger athletic stripe trousers, technical track joggers and everyday street comfort.",
+    image: "/assets/slazenger-cuffed-joggers.jpg",
+    productCount: 3,
   },
 ];
 
 export interface DetailedProduct extends ProductCardProps {
   description: string;
   categorySlug: string;
+  collectionSlug?: string;
   fabric: string;
   craftsmanship: string;
   colorName: string;
@@ -70,403 +105,434 @@ export interface DetailedProduct extends ProductCardProps {
 }
 
 // ═══════════════════════════════════════════
-// All 10 Authentic Lihaaz by Minhaaz Products
+// All 10 Authentic Gent Apparel BD Products
 // ═══════════════════════════════════════════
 export const ALL_PRODUCTS: DetailedProduct[] = [
   {
-    id: "lm-01",
-    name: "The Royal Mughal Arch Jharokha Chikankari Panjabi",
-    slug: "royal-mughal-arch-jharokha-chikankari-panjabi",
-    price: 5450,
-    compareAtPrice: 6500,
-    image: "/assets/731105183_1007378862271175_2839197506608792838_n.jpg",
+    id: "ga-01",
+    name: "Lucky Brand 121 Heritage Slim Straight Light Wash Denim",
+    slug: "lucky-brand-121-slim-straight-light-wash-denim",
+    price: 1450,
+    compareAtPrice: 2250,
+    image: "/assets/lucky-brand-light-wash.jpg",
     images: [
-      "/assets/731105183_1007378862271175_2839197506608792838_n.jpg",
-      "/assets/732253170_1009973652011696_2448383532522583757_n.jpg",
+      "/assets/lucky-brand-light-wash.jpg",
+      "/assets/lucky-brand-dark-indigo.jpg",
     ],
-    category: "Royal Heritage & Wedding",
-    categorySlug: "royal-heritage",
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "super-premium-denim",
     isNew: true,
     isFeatured: true,
     isBestseller: true,
-    stock: 25,
-    fabric: "Fine Chanderi Silk Blend",
-    craftsmanship: "Mughal Jharokha Chikankari & Tone-on-Tone Sequin",
-    colorName: "Antique Ivory",
+    stock: 45,
+    fabric: "98% Premium Ring-Spun Cotton, 2% Elastane Flex Denim",
+    craftsmanship: "Artisan Hand-Sanded Whiskering & Copper Hardware",
+    colorName: "Vintage Light Indigo Wash",
     description:
-      "An architectural masterpiece in bespoke menswear. Handcrafted with intricate ivory Chikankari threadwork depicting royal Mughal arches, jharokhas, and botanical lattice jaal. Adorned with heirloom antique gold medallion buttons on the placket and finished with an immaculate mandarin collar. Tailored for grooms, reception galas, and extraordinary festive occasions.",
+      "100% authentic original export surplus Lucky Brand men's denim jeans. Designed with a timeless light vintage wash, authentic whiskering, and subtle hand-sanded fades. Features premium stretch cotton for unmatched flexibility and all-day comfort, signature heavy-duty copper rivets, smooth zip fly, and classic 5-pocket styling. Verified factory tags attached.",
     specifications: [
-      { label: "Fabric", value: "Fine Chanderi Silk Blend with Lustrous Sheen" },
-      { label: "Embroidery", value: "Mughal Arch & Botanical Jharokha Chikankari" },
-      { label: "Buttons", value: "Handcrafted Antique Gold Medallions" },
-      { label: "Collar", value: "Reinforced Structured Mandarin Collar" },
-      { label: "Fit", value: "Tailored Royal Silhouette" },
-      { label: "Care Instructions", value: "Dry Clean Only to preserve hand-embroidery" },
+      { label: "Brand Origin", value: "Lucky Brand (USA Authentic Export)" },
+      { label: "Fit Type", value: "121 Slim Straight Leg Profile" },
+      { label: "Fabric Composition", value: "98% Combed Cotton, 2% Elastane" },
+      { label: "Wash Type", value: "Artisan Light Stone Wash with Whiskers" },
+      { label: "Closure", value: "Branded Metal Shank Button & Heavy-Duty Zip Fly" },
+      { label: "Hardware", value: "Reinforced Rivets & Contrast Amber Stitching" },
+      { label: "Available Sizes", value: "30, 32, 34, 36, 38, 40 (True to Size)" },
+      { label: "Care Instructions", value: "Machine wash cold inside out, tumble dry low" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)। ডেলিভারির সময় পার্সেল খুলে চেক করে নেওয়ার সুবিধা রয়েছে।",
     variants: [
-      { id: "lm-01-38", sku: "LM-MGH-IVO-38", size: "38 (Chest 40)", color: "Antique Ivory", price: 5450, stock: 5, images: ["/assets/731105183_1007378862271175_2839197506608792838_n.jpg"] },
-      { id: "lm-01-40", sku: "LM-MGH-IVO-40", size: "40 (Chest 42)", color: "Antique Ivory", price: 5450, stock: 8, images: ["/assets/731105183_1007378862271175_2839197506608792838_n.jpg"] },
-      { id: "lm-01-42", sku: "LM-MGH-IVO-42", size: "42 (Chest 44)", color: "Antique Ivory", price: 5450, stock: 7, images: ["/assets/731105183_1007378862271175_2839197506608792838_n.jpg"] },
-      { id: "lm-01-44", sku: "LM-MGH-IVO-44", size: "44 (Chest 46)", color: "Antique Ivory", price: 5450, stock: 4, images: ["/assets/731105183_1007378862271175_2839197506608792838_n.jpg"] },
-      { id: "lm-01-46", sku: "LM-MGH-IVO-46", size: "46 (Chest 48)", color: "Antique Ivory", price: 5450, stock: 3, images: ["/assets/731105183_1007378862271175_2839197506608792838_n.jpg"] },
+      { id: "v-01-30", sku: "LB-121-LT-30", size: "30", color: "Light Wash", price: 1450, stock: 8, images: ["/assets/lucky-brand-light-wash.jpg"] },
+      { id: "v-01-32", sku: "LB-121-LT-32", size: "32", color: "Light Wash", price: 1450, stock: 12, images: ["/assets/lucky-brand-light-wash.jpg"] },
+      { id: "v-01-34", sku: "LB-121-LT-34", size: "34", color: "Light Wash", price: 1450, stock: 10, images: ["/assets/lucky-brand-light-wash.jpg"] },
+      { id: "v-01-36", sku: "LB-121-LT-36", size: "36", color: "Light Wash", price: 1450, stock: 9, images: ["/assets/lucky-brand-light-wash.jpg"] },
+      { id: "v-01-38", sku: "LB-121-LT-38", size: "38", color: "Light Wash", price: 1450, stock: 6, images: ["/assets/lucky-brand-light-wash.jpg"] },
     ],
   },
   {
-    id: "lm-02",
-    name: "The Golden Blossom Jacquard Raw Silk Panjabi",
-    slug: "golden-blossom-jacquard-raw-silk-panjabi",
-    price: 4950,
-    compareAtPrice: 5800,
-    image: "/assets/731173450_1008107675531627_7884714671446302908_n.jpg",
+    id: "ga-02",
+    name: "Lucky Brand 221 Original Straight Fit Deep Indigo Denim",
+    slug: "lucky-brand-221-original-straight-deep-indigo-denim",
+    price: 1490,
+    compareAtPrice: 2350,
+    image: "/assets/lucky-brand-dark-indigo.jpg",
     images: [
-      "/assets/731173450_1008107675531627_7884714671446302908_n.jpg",
-      "/assets/banner.jpg",
+      "/assets/lucky-brand-dark-indigo.jpg",
+      "/assets/lucky-brand-light-wash.jpg",
     ],
-    category: "Festive Eid Collection",
-    categorySlug: "festive-eid",
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "super-premium-denim",
     isNew: true,
     isFeatured: true,
     isBestseller: true,
-    stock: 22,
-    fabric: "Pure Raw Silk Jacquard",
-    craftsmanship: "Metallic Botanical Branch & Blossom Weave",
-    colorName: "Champagne Gold",
+    stock: 50,
+    fabric: "99% Cotton, 1% Spandex Comfort Flex Stretch Denim",
+    craftsmanship: "Deep Indigo Dye, Contrast Stitching & Bar-Tack Reinforcement",
+    colorName: "Deep Indigo / Dark Rinse",
     description:
-      "Featured prominently on our flagship brand campaign. Woven from rich Champagne Gold raw silk jacquard with glistening branch and floral blossom motifs. Detailed with antique brass engraved dome buttons and tailored for an authoritative, regal festive silhouette.",
+      "Authentic export quality Lucky Brand deep indigo rinse jeans. Crafted with high-grade indigo dye and clean contrast amber stitching. Offers a relaxed straight-leg profile with comfortable waist rise and durable heavy-duty rivets. An essential staple that pairs effortlessly with t-shirts, casual polos, or formal shirts.",
     specifications: [
-      { label: "Fabric", value: "100% Premium Raw Silk Jacquard" },
-      { label: "Weave", value: "Metallic Botanical Branch & Flower Tapestry" },
-      { label: "Buttons", value: "Antique Brass Engraved Dome Buttons" },
-      { label: "Collar", value: "Structured Mandarin Collar with Piping" },
-      { label: "Occasion", value: "Eid Celebrations, Holud, Reception" },
+      { label: "Brand Origin", value: "Lucky Brand (USA Export Surplus)" },
+      { label: "Fit Type", value: "221 Original Straight Fit" },
+      { label: "Fabric Composition", value: "99% Cotton, 1% Spandex Stretch Denim" },
+      { label: "Wash Type", value: "Deep Indigo Clean Rinse with Subtle Slub" },
+      { label: "Hardware", value: "Branded Metal Rivets & Solid Brass Zipper" },
+      { label: "Available Sizes", value: "30, 32, 34, 36, 38, 40" },
+      { label: "Waist Style", value: "Mid-Rise Classic Waistband" },
+      { label: "Pocket Style", value: "Classic 5-Pocket with Coin Pocket" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)। ডেলিভারির সময় পার্সেল খুলে চেক করে নেওয়ার সুবিধা রয়েছে।",
     variants: [
-      { id: "lm-02-38", sku: "LM-BLS-GLD-38", size: "38 (Chest 40)", color: "Champagne Gold", price: 4950, stock: 4, images: ["/assets/731173450_1008107675531627_7884714671446302908_n.jpg"] },
-      { id: "lm-02-40", sku: "LM-BLS-GLD-40", size: "40 (Chest 42)", color: "Champagne Gold", price: 4950, stock: 7, images: ["/assets/731173450_1008107675531627_7884714671446302908_n.jpg"] },
-      { id: "lm-02-42", sku: "LM-BLS-GLD-42", size: "42 (Chest 44)", color: "Champagne Gold", price: 4950, stock: 6, images: ["/assets/731173450_1008107675531627_7884714671446302908_n.jpg"] },
-      { id: "lm-02-44", sku: "LM-BLS-GLD-44", size: "44 (Chest 46)", color: "Champagne Gold", price: 4950, stock: 3, images: ["/assets/731173450_1008107675531627_7884714671446302908_n.jpg"] },
+      { id: "v-02-30", sku: "LB-221-IND-30", size: "30", color: "Deep Indigo", price: 1490, stock: 10, images: ["/assets/lucky-brand-dark-indigo.jpg"] },
+      { id: "v-02-32", sku: "LB-221-IND-32", size: "32", color: "Deep Indigo", price: 1490, stock: 15, images: ["/assets/lucky-brand-dark-indigo.jpg"] },
+      { id: "v-02-34", sku: "LB-221-IND-34", size: "34", color: "Deep Indigo", price: 1490, stock: 12, images: ["/assets/lucky-brand-dark-indigo.jpg"] },
+      { id: "v-02-36", sku: "LB-221-IND-36", size: "36", color: "Deep Indigo", price: 1490, stock: 8, images: ["/assets/lucky-brand-dark-indigo.jpg"] },
+      { id: "v-02-38", sku: "LB-221-IND-38", size: "38", color: "Deep Indigo", price: 1490, stock: 5, images: ["/assets/lucky-brand-dark-indigo.jpg"] },
     ],
   },
   {
-    id: "lm-03",
-    name: "The Midnight Sequin & Black Threadwork Panjabi",
-    slug: "midnight-sequin-black-threadwork-panjabi",
-    price: 5200,
-    compareAtPrice: 6200,
-    image: "/assets/731111670_1005638735778521_305236285496504724_n.jpg",
+    id: "ga-03",
+    name: "Sea Barrier Italian Attitude Raw Indigo Straight Jeans",
+    slug: "sea-barrier-italian-attitude-raw-indigo-straight-jeans",
+    price: 1550,
+    compareAtPrice: 2400,
+    image: "/assets/sea-barrier-raw-indigo.jpg",
     images: [
-      "/assets/731111670_1005638735778521_305236285496504724_n.jpg",
-      "/assets/731093757_1006440569031671_1421850103096556184_n.jpg",
+      "/assets/sea-barrier-raw-indigo.jpg",
+      "/assets/sea-barrier-medium-wash.jpg",
     ],
-    category: "Evening & Black Edition",
-    categorySlug: "evening-black",
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "italian-attitude",
     isNew: true,
     isFeatured: true,
-    stock: 18,
-    fabric: "Premium Silk-Cotton Blend",
-    craftsmanship: "Tonal Black Sequin & Silk Resham Jaal",
-    colorName: "Midnight Obsidian",
+    isBestseller: true,
+    stock: 38,
+    fabric: "12.5 oz Premium Cotton Denim with Subtle Flex",
+    craftsmanship: "Italian Heritage Cut, Leather Waist Patch & Wave Embroidery",
+    colorName: "Raw Indigo Blue",
     description:
-      "Subtle drama meets timeless noir elegance. Deep Obsidian silk-cotton canvas embellished with tonal black sequin highlights and delicate threadwork floral jaal that catches light with every movement. Crowned with antique silver filigree square buttons with embossed crest detailing.",
+      "Original Italian export surplus Sea Barrier denim jeans. Features authentic leather back waistband patch, signature wave pocket embroidery, reinforced bar tacks, and premium Italian tailoring attitude. Clean dark rinse suitable for both casual outings and smart-casual office styling.",
     specifications: [
-      { label: "Fabric", value: "Premium Silk-Cotton Canvas" },
-      { label: "Embellishment", value: "Tonal Black Sequins & Resham Needlework" },
-      { label: "Buttons", value: "Antique Silver Filigree Square Crest Studs" },
-      { label: "Collar", value: "Structured High Mandarin Collar" },
-      { label: "Style", value: "Contemporary Regal Evening Wear" },
+      { label: "Brand Origin", value: "Sea Barrier (Italy Authentic Surplus)" },
+      { label: "Fit Type", value: "Regular Straight Continental Cut" },
+      { label: "Fabric Weight", value: "12.5 oz Mid-Weight Denim" },
+      { label: "Patch Detailing", value: "Embossed Genuine Leather Back Badge" },
+      { label: "Back Pocket", value: "Signature Italian Attitude Wave Stitch" },
+      { label: "Available Sizes", value: "32, 34, 36, 38, 40, 42" },
+      { label: "Colorway", value: "Raw Indigo with Tonal Navy Accents" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-03-38", sku: "LM-MID-BLK-38", size: "38 (Chest 40)", color: "Midnight Black", price: 5200, stock: 3, images: ["/assets/731111670_1005638735778521_305236285496504724_n.jpg"] },
-      { id: "lm-03-40", sku: "LM-MID-BLK-40", size: "40 (Chest 42)", color: "Midnight Black", price: 5200, stock: 6, images: ["/assets/731111670_1005638735778521_305236285496504724_n.jpg"] },
-      { id: "lm-03-42", sku: "LM-MID-BLK-42", size: "42 (Chest 44)", color: "Midnight Black", price: 5200, stock: 5, images: ["/assets/731111670_1005638735778521_305236285496504724_n.jpg"] },
-      { id: "lm-03-44", sku: "LM-MID-BLK-44", size: "44 (Chest 46)", color: "Midnight Black", price: 5200, stock: 4, images: ["/assets/731111670_1005638735778521_305236285496504724_n.jpg"] },
+      { id: "v-03-32", sku: "SB-RAW-32", size: "32", color: "Raw Indigo", price: 1550, stock: 10, images: ["/assets/sea-barrier-raw-indigo.jpg"] },
+      { id: "v-03-34", sku: "SB-RAW-34", size: "34", color: "Raw Indigo", price: 1550, stock: 12, images: ["/assets/sea-barrier-raw-indigo.jpg"] },
+      { id: "v-03-36", sku: "SB-RAW-36", size: "36", color: "Raw Indigo", price: 1550, stock: 8, images: ["/assets/sea-barrier-raw-indigo.jpg"] },
+      { id: "v-03-38", sku: "SB-RAW-38", size: "38", color: "Raw Indigo", price: 1550, stock: 8, images: ["/assets/sea-barrier-raw-indigo.jpg"] },
     ],
   },
   {
-    id: "lm-04",
-    name: "The Slate Diamond Lattice Chikankari Panjabi",
-    slug: "slate-diamond-lattice-chikankari-panjabi",
-    price: 4800,
-    compareAtPrice: 5600,
-    image: "/assets/731093757_1006440569031671_1421850103096556184_n.jpg",
+    id: "ga-04",
+    name: "Sea Barrier Italian Attitude Classic Medium Wash Flex Denim",
+    slug: "sea-barrier-classic-medium-wash-flex-denim",
+    price: 1520,
+    compareAtPrice: 2300,
+    image: "/assets/sea-barrier-medium-wash.jpg",
     images: [
-      "/assets/731093757_1006440569031671_1421850103096556184_n.jpg",
-      "/assets/731111670_1005638735778521_305236285496504724_n.jpg",
+      "/assets/sea-barrier-medium-wash.jpg",
+      "/assets/sea-barrier-raw-indigo.jpg",
     ],
-    category: "Festive Eid Collection",
-    categorySlug: "festive-eid",
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "italian-attitude",
+    isNew: false,
+    isFeatured: true,
+    isBestseller: false,
+    stock: 40,
+    fabric: "98% Combed Cotton, 2% Lycra Flex Denim",
+    craftsmanship: "Stone Enzyme Medium Wash, Inner Printed Waistband & Metal Crest",
+    colorName: "Classic Medium Blue",
+    description:
+      "100% genuine export quality Sea Barrier Italian attitude trousers jeans. Hand-treated medium blue wash with authentic Italian hardware, branded interior waistband tape, and comfort stretch fit. Styled with signature tonal rear pocket detailing and yellow brand hangtag.",
+    specifications: [
+      { label: "Brand Origin", value: "Sea Barrier (Italy Collection)" },
+      { label: "Fit Type", value: "Modern Slim Straight Leg" },
+      { label: "Stretch Technology", value: "2-Way Lycra Flex Recovery" },
+      { label: "Inner Waistband", value: "Branded Jacquard Tape 'Sea Barrier'" },
+      { label: "Hardware", value: "Antique Silver Shank Button & Branded Rivets" },
+      { label: "Available Sizes", value: "30, 32, 34, 36, 38, 40" },
+    ],
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
+    variants: [
+      { id: "v-04-30", sku: "SB-MED-30", size: "30", color: "Medium Blue", price: 1520, stock: 8, images: ["/assets/sea-barrier-medium-wash.jpg"] },
+      { id: "v-04-32", sku: "SB-MED-32", size: "32", color: "Medium Blue", price: 1520, stock: 12, images: ["/assets/sea-barrier-medium-wash.jpg"] },
+      { id: "v-04-34", sku: "SB-MED-34", size: "34", color: "Medium Blue", price: 1520, stock: 10, images: ["/assets/sea-barrier-medium-wash.jpg"] },
+      { id: "v-04-36", sku: "SB-MED-36", size: "36", color: "Medium Blue", price: 1520, stock: 10, images: ["/assets/sea-barrier-medium-wash.jpg"] },
+    ],
+  },
+  {
+    id: "ga-05",
+    name: "IL Granchio Luxury Wear Italian Collection Stretch Denim",
+    slug: "il-granchio-luxury-wear-italian-collection-stretch-denim",
+    price: 1590,
+    compareAtPrice: 2500,
+    image: "/assets/il-granchio-italian-denim.jpg",
+    images: [
+      "/assets/il-granchio-italian-denim.jpg",
+      "/assets/sea-barrier-medium-wash.jpg",
+    ],
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "italian-attitude",
     isNew: true,
     isFeatured: true,
-    stock: 20,
-    fabric: "Hand-spun Cotton Silk",
-    craftsmanship: "Geometric Diamond Lattice Chikankari",
-    colorName: "Slate Charcoal",
+    isBestseller: true,
+    stock: 35,
+    fabric: "Premium Italian Spec Cotton-Rich Stretch Twill Denim",
+    craftsmanship: "Ocean Stone Wash, Genuine Leather Back Badge & Coin Pocket Tag",
+    colorName: "Ocean Blue Stone Wash",
     description:
-      "A masterclass in geometric finesse. Slate charcoal body crafted with geometric diamond lattice Chikankari and intricate eyelet detailing. Features a cascading row of hand-wrapped fabric potli loop buttons down the split mandarin neckline.",
+      "Authentic export piece from Italy's luxury casual label IL Granchio. Tailored with refined ocean blue stone washing, signature genuine leather badge, wave stitch back pockets, and coin-pocket metal accent. Unbeatable comfort, soft hand-feel, and sophisticated continental silhouette.",
     specifications: [
-      { label: "Fabric", value: "Hand-spun Cotton Silk" },
-      { label: "Embroidery", value: "Geometric Diamond Lattice Chikankari" },
-      { label: "Placket Detail", value: "Cascading Fabric-wrapped Potli Buttons" },
-      { label: "Collar", value: "Split Mandarin Band" },
+      { label: "Brand Origin", value: "IL Granchio Luxury Wear (Italy)" },
+      { label: "Fit Type", value: "Italian Tapered Straight Fit" },
+      { label: "Fabric", value: "98% Long-Staple Cotton, 2% Elastane" },
+      { label: "Back Badge", value: "Tan Saddle Leather with Foil Stamping" },
+      { label: "Detailing", value: "Dual Color Needlework & Metal Tab on Coin Pocket" },
+      { label: "Available Sizes", value: "30, 32, 34, 36, 38, 40" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-04-38", sku: "LM-SLT-DIA-38", size: "38 (Chest 40)", color: "Slate Charcoal", price: 4800, stock: 4, images: ["/assets/731093757_1006440569031671_1421850103096556184_n.jpg"] },
-      { id: "lm-04-40", sku: "LM-SLT-DIA-40", size: "40 (Chest 42)", color: "Slate Charcoal", price: 4800, stock: 6, images: ["/assets/731093757_1006440569031671_1421850103096556184_n.jpg"] },
-      { id: "lm-04-42", sku: "LM-SLT-DIA-42", size: "42 (Chest 44)", color: "Slate Charcoal", price: 4800, stock: 7, images: ["/assets/731093757_1006440569031671_1421850103096556184_n.jpg"] },
-      { id: "lm-04-44", sku: "LM-SLT-DIA-44", size: "44 (Chest 46)", color: "Slate Charcoal", price: 4800, stock: 3, images: ["/assets/731093757_1006440569031671_1421850103096556184_n.jpg"] },
+      { id: "v-05-30", sku: "ILG-30", size: "30", color: "Ocean Blue", price: 1590, stock: 6, images: ["/assets/il-granchio-italian-denim.jpg"] },
+      { id: "v-05-32", sku: "ILG-32", size: "32", color: "Ocean Blue", price: 1590, stock: 10, images: ["/assets/il-granchio-italian-denim.jpg"] },
+      { id: "v-05-34", sku: "ILG-34", size: "34", color: "Ocean Blue", price: 1590, stock: 10, images: ["/assets/il-granchio-italian-denim.jpg"] },
+      { id: "v-05-36", sku: "ILG-36", size: "36", color: "Ocean Blue", price: 1590, stock: 9, images: ["/assets/il-granchio-italian-denim.jpg"] },
     ],
   },
   {
-    id: "lm-05",
-    name: "The Antique Medallion Paisley Jacquard Silk Panjabi",
-    slug: "antique-medallion-paisley-jacquard-silk-panjabi",
-    price: 4650,
-    compareAtPrice: 5400,
-    image: "/assets/727886407_1003812822627779_5320585349107522996_n.jpg",
+    id: "ga-06",
+    name: "Aeropostale Vintage Washed Charcoal Grey Denim Jeans",
+    slug: "aeropostale-vintage-washed-charcoal-grey-denim-jeans",
+    price: 1390,
+    compareAtPrice: 2100,
+    image: "/assets/aeropostale-charcoal-denim.jpg",
     images: [
-      "/assets/727886407_1003812822627779_5320585349107522996_n.jpg",
-      "/assets/730084646_1004632885879106_4033408280096934129_n.jpg",
+      "/assets/aeropostale-charcoal-denim.jpg",
+      "/assets/lucky-brand-dark-indigo.jpg",
     ],
-    category: "Luxury Silk & Jacquard",
-    categorySlug: "luxury-silk-jacquard",
+    category: "Original Export Denim",
+    categorySlug: "denim-jeans",
+    collectionSlug: "super-premium-denim",
     isNew: false,
     isFeatured: true,
-    stock: 16,
-    fabric: "Persian Tapestry Jacquard Silk",
-    craftsmanship: "Muted Olive & Beige Antique Paisley Medallions",
-    colorName: "Antique Cream & Muted Olive",
+    isBestseller: false,
+    stock: 30,
+    fabric: "98% Cotton, 2% Elastane Charcoal Wash Denim",
+    craftsmanship: "Acid-Free Mineral Dye, Sanded Thigh Highlight & Tonal Stitch",
+    colorName: "Faded Charcoal Grey / Mineral Black",
     description:
-      "Inspired by Persian court textiles, this antique cream and muted olive Panjabi showcases intricate medallion and paisley jacquard weaves. Designed with a clean concealed placket and decorative engraved neck button for understated distinction.",
+      "100% authentic original export Aeropostale men's slim straight denim. Finished in an edgy washed charcoal grey tone with natural fading on the thighs and knees. Engineered with authentic stretch cotton for all-day mobility and urban casual vibes.",
     specifications: [
-      { label: "Fabric", value: "Vintage Persian Jacquard Silk Weave" },
-      { label: "Motif", value: "Royal Medallion & Paisley Tapestry" },
-      { label: "Placket", value: "Concealed Placket with Antique Top Button" },
-      { label: "Collar", value: "Tailored Stand Collar" },
+      { label: "Brand Origin", value: "Aeropostale (USA Authentic Export)" },
+      { label: "Fit Type", value: "Slim Straight Urban Cut" },
+      { label: "Fabric", value: "Charcoal Slub Stretch Denim" },
+      { label: "Finish", value: "Vintage Mineral Wash with Whiskering" },
+      { label: "Sizes Available", value: "30, 32, 34, 36, 38" },
+      { label: "Pocket Rivets", value: "Matte Black Oxide Hardware" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-05-38", sku: "LM-MED-OLV-38", size: "38 (Chest 40)", color: "Antique Cream", price: 4650, stock: 3, images: ["/assets/727886407_1003812822627779_5320585349107522996_n.jpg"] },
-      { id: "lm-05-40", sku: "LM-MED-OLV-40", size: "40 (Chest 42)", color: "Antique Cream", price: 4650, stock: 5, images: ["/assets/727886407_1003812822627779_5320585349107522996_n.jpg"] },
-      { id: "lm-05-42", sku: "LM-MED-OLV-42", size: "42 (Chest 44)", color: "Antique Cream", price: 4650, stock: 5, images: ["/assets/727886407_1003812822627779_5320585349107522996_n.jpg"] },
-      { id: "lm-05-44", sku: "LM-MED-OLV-44", size: "44 (Chest 46)", color: "Antique Cream", price: 4650, stock: 3, images: ["/assets/727886407_1003812822627779_5320585349107522996_n.jpg"] },
+      { id: "v-06-30", sku: "AERO-GRY-30", size: "30", color: "Charcoal Grey", price: 1390, stock: 6, images: ["/assets/aeropostale-charcoal-denim.jpg"] },
+      { id: "v-06-32", sku: "AERO-GRY-32", size: "32", color: "Charcoal Grey", price: 1390, stock: 10, images: ["/assets/aeropostale-charcoal-denim.jpg"] },
+      { id: "v-06-34", sku: "AERO-GRY-34", size: "34", color: "Charcoal Grey", price: 1390, stock: 8, images: ["/assets/aeropostale-charcoal-denim.jpg"] },
+      { id: "v-06-36", sku: "AERO-GRY-36", size: "36", color: "Charcoal Grey", price: 1390, stock: 6, images: ["/assets/aeropostale-charcoal-denim.jpg"] },
     ],
   },
   {
-    id: "lm-06",
-    name: "The Egyptian Cotton Gold Damask Panjabi",
-    slug: "egyptian-cotton-gold-damask-panjabi",
-    price: 4250,
-    compareAtPrice: 4950,
-    image: "/assets/728570183_1003994135942981_1995203835787078592_n.jpg",
+    id: "ga-07",
+    name: "Sea Barrier E-X-TRA Comfort Chino Gabardine Pants",
+    slug: "sea-barrier-extra-comfort-chino-gabardine-pants",
+    price: 1350,
+    compareAtPrice: 2000,
+    image: "/assets/sea-barrier-chino-pants.jpg",
     images: [
-      "/assets/728570183_1003994135942981_1995203835787078592_n.jpg",
-      "/assets/726432719_1002041632804898_4565876842780552996_n.jpg",
+      "/assets/sea-barrier-chino-pants.jpg",
+      "/assets/slazenger-stripe-trackpants.jpg",
     ],
-    category: "Classic Signature Cotton",
-    categorySlug: "classic-cotton",
+    category: "Italian Gabardine & Chinos",
+    categorySlug: "gabardine-chinos",
+    collectionSlug: "italian-attitude",
     isNew: true,
     isFeatured: true,
-    stock: 24,
-    fabric: "100% Giza Egyptian Long-Staple Cotton",
-    craftsmanship: "Gold & Bronze Damask Needlework on Collar & Cuffs",
-    colorName: "Pristine White",
+    isBestseller: true,
+    stock: 42,
+    fabric: "100% Export-Grade Cotton Twill Gabardine with Comfort Flex",
+    craftsmanship: "Tailored Welt Rear Pockets, Italian Button Fly & Flex Waistband",
+    colorName: "Slate Grey / Charcoal Taupe",
     description:
-      "Pure sophistication in Giza Egyptian long-staple cotton. Featuring baroque gold and bronze damask embroidered collar and wide cuffs, complemented by square metallic rimmed stud buttons down the front placket.",
+      "Authentic export quality Sea Barrier Extra Comfort gabardine trousers. Engineered with soft-touch combed cotton twill, buttoned welt rear pockets, and tailored front slash pockets. The benchmark of Italian smart-casual comfort, pairing seamlessly with polos, shirts, or blazers.",
     specifications: [
-      { label: "Fabric", value: "100% Premium Giza Egyptian Combed Cotton" },
-      { label: "Embroidery", value: "Royal Damask Baroque Threadwork" },
-      { label: "Buttons", value: "Square Metallic Stud Buttons" },
-      { label: "Cuff Detail", value: "Wide Embroidered French Cuffs" },
+      { label: "Brand Origin", value: "Sea Barrier Extra Comfort (Italy)" },
+      { label: "Trousers Type", value: "Smart Casual Chino / Gabardine" },
+      { label: "Weave", value: "High-Density Compact Twill Gabardine" },
+      { label: "Pockets", value: "Dual Rear Jet Pockets with Horn Buttons" },
+      { label: "Rise & Leg", value: "Mid-Rise Clean Tapered Silhouette" },
+      { label: "Sizes Available", value: "30, 32, 34, 36, 38, 40, 42" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-06-38", sku: "LM-EGY-WHT-38", size: "38 (Chest 40)", color: "Pristine White", price: 4250, stock: 5, images: ["/assets/728570183_1003994135942981_1995203835787078592_n.jpg"] },
-      { id: "lm-06-40", sku: "LM-EGY-WHT-40", size: "40 (Chest 42)", color: "Pristine White", price: 4250, stock: 7, images: ["/assets/728570183_1003994135942981_1995203835787078592_n.jpg"] },
-      { id: "lm-06-42", sku: "LM-EGY-WHT-42", size: "42 (Chest 44)", color: "Pristine White", price: 4250, stock: 8, images: ["/assets/728570183_1003994135942981_1995203835787078592_n.jpg"] },
-      { id: "lm-06-44", sku: "LM-EGY-WHT-44", size: "44 (Chest 46)", color: "Pristine White", price: 4250, stock: 4, images: ["/assets/728570183_1003994135942981_1995203835787078592_n.jpg"] },
+      { id: "v-07-30", sku: "SB-CHINO-30", size: "30", color: "Slate Grey", price: 1350, stock: 8, images: ["/assets/sea-barrier-chino-pants.jpg"] },
+      { id: "v-07-32", sku: "SB-CHINO-32", size: "32", color: "Slate Grey", price: 1350, stock: 12, images: ["/assets/sea-barrier-chino-pants.jpg"] },
+      { id: "v-07-34", sku: "SB-CHINO-34", size: "34", color: "Slate Grey", price: 1350, stock: 10, images: ["/assets/sea-barrier-chino-pants.jpg"] },
+      { id: "v-07-36", sku: "SB-CHINO-36", size: "36", color: "Slate Grey", price: 1350, stock: 8, images: ["/assets/sea-barrier-chino-pants.jpg"] },
+      { id: "v-07-38", sku: "SB-CHINO-38", size: "38", color: "Slate Grey", price: 1350, stock: 4, images: ["/assets/sea-barrier-chino-pants.jpg"] },
     ],
   },
   {
-    id: "lm-07",
-    name: "The Resham Floral Vine Pearl White Panjabi",
-    slug: "resham-floral-vine-pearl-white-panjabi",
-    price: 4500,
-    compareAtPrice: 5200,
-    image: "/assets/732253170_1009973652011696_2448383532522583757_n.jpg",
+    id: "ga-08",
+    name: "Slazenger Heritage Athletic Stripe Track Pants",
+    slug: "slazenger-heritage-athletic-stripe-track-pants",
+    price: 850,
+    compareAtPrice: 1400,
+    image: "/assets/slazenger-stripe-trackpants.jpg",
     images: [
-      "/assets/732253170_1009973652011696_2448383532522583757_n.jpg",
-      "/assets/728503334_1002964499379278_6332609520572502345_n.jpg",
+      "/assets/slazenger-stripe-trackpants.jpg",
+      "/assets/slazenger-cuffed-joggers.jpg",
     ],
-    category: "Classic Signature Cotton",
-    categorySlug: "classic-cotton",
+    category: "Activewear & Joggers",
+    categorySlug: "joggers-activewear",
+    collectionSlug: "athletic-streetwear",
+    isNew: true,
+    isFeatured: true,
+    isBestseller: true,
+    stock: 60,
+    fabric: "Premium Interlock Knit (65% Cotton, 35% Polyester)",
+    craftsmanship: "Dual White Racing Piping & High-Density Embroidered Panther",
+    colorName: "Classic Jet Black with White Piping",
+    description:
+      "100% authentic export Slazenger activewear trousers. Engineered with breathable double-knit poly-cotton fleece, elasticated waistband with interior drawcord, side zipper pockets, and iconic Slazenger panther logo embroidery. Clean white side racing stripes for an athletic edge.",
+    specifications: [
+      { label: "Brand Origin", value: "Slazenger UK (Export Authentic)" },
+      { label: "Product Type", value: "Athletic Track Trousers / Training Pants" },
+      { label: "Waistband", value: "Ribbed Elastic with Heavy-Duty Drawstring" },
+      { label: "Pockets", value: "Deep Side Pockets for Phone & Keys" },
+      { label: "Logo", value: "Embroidered Slazenger Panther Crest" },
+      { label: "Sizes Available", value: "S (28-30), M (31-33), L (34-36), XL (37-39), XXL (40-42)" },
+    ],
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
+    variants: [
+      { id: "v-08-s", sku: "SLZ-ST-S", size: "S (28-30)", color: "Black/White", price: 850, stock: 12, images: ["/assets/slazenger-stripe-trackpants.jpg"] },
+      { id: "v-08-m", sku: "SLZ-ST-M", size: "M (31-33)", color: "Black/White", price: 850, stock: 18, images: ["/assets/slazenger-stripe-trackpants.jpg"] },
+      { id: "v-08-l", sku: "SLZ-ST-L", size: "L (34-36)", color: "Black/White", price: 850, stock: 15, images: ["/assets/slazenger-stripe-trackpants.jpg"] },
+      { id: "v-08-xl", sku: "SLZ-ST-XL", size: "XL (37-39)", color: "Black/White", price: 850, stock: 10, images: ["/assets/slazenger-stripe-trackpants.jpg"] },
+      { id: "v-08-xxl", sku: "SLZ-ST-XXL", size: "XXL (40-42)", color: "Black/White", price: 850, stock: 5, images: ["/assets/slazenger-stripe-trackpants.jpg"] },
+    ],
+  },
+  {
+    id: "ga-09",
+    name: "Slazenger Export Edition Cuffed Ankle Joggers",
+    slug: "slazenger-export-edition-cuffed-ankle-joggers",
+    price: 890,
+    compareAtPrice: 1450,
+    image: "/assets/slazenger-cuffed-joggers.jpg",
+    images: [
+      "/assets/slazenger-cuffed-joggers.jpg",
+      "/assets/slazenger-stripe-trackpants.jpg",
+    ],
+    category: "Activewear & Joggers",
+    categorySlug: "joggers-activewear",
+    collectionSlug: "athletic-streetwear",
     isNew: false,
     isFeatured: true,
-    stock: 20,
-    fabric: "Silk-Cotton Blend",
-    craftsmanship: "Fluid Aari & Resham Floral Vine Threadwork",
-    colorName: "Pearl White",
+    isBestseller: false,
+    stock: 55,
+    fabric: "Brushed Fleece Cotton-Poly Blend (280 GSM)",
+    craftsmanship: "Cuffed Ankle Ribbing, Full Bar-Tack & Factory Hangtags Attached",
+    colorName: "Pitch Black with White Contrast Detail",
     description:
-      "Pure celestial charm. Pristine Pearl White silk-cotton adorned with fluid flowing vines and blooming floral Resham threadwork. Accented with an uninterrupted row of handmade cloth-covered potli buttons along the placket.",
+      "Original factory-tagged Slazenger export trousers featuring ribbed cuffed ankles, premium drawstrings, deep welt pockets, and embroidered panther crest. Designed for workouts, weekend lounging, or high-comfort travel with cozy brushed cotton interior.",
     specifications: [
-      { label: "Fabric", value: "Soft Luster Silk-Cotton Blend" },
-      { label: "Embroidery", value: "Aari & Resham Floral Vine Needlework" },
-      { label: "Buttons", value: "Hand-rolled Fabric Potli Buttons" },
-      { label: "Collar", value: "Graceful Curved Mandarin Collar" },
+      { label: "Brand Origin", value: "Slazenger UK (Factory Surplus)" },
+      { label: "Jogger Cut", value: "Tapered Leg with Ribbed Elastic Ankle Cuffs" },
+      { label: "Fabric Weight", value: "280 GSM Brushed Soft Cotton Fleece" },
+      { label: "Tags", value: "Original Slazenger Hangtags & Barcodes" },
+      { label: "Sizes Available", value: "M, L, XL, XXL" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-07-38", sku: "LM-RES-WHT-38", size: "38 (Chest 40)", color: "Pearl White", price: 4500, stock: 4, images: ["/assets/732253170_1009973652011696_2448383532522583757_n.jpg"] },
-      { id: "lm-07-40", sku: "LM-RES-WHT-40", size: "40 (Chest 42)", color: "Pearl White", price: 4500, stock: 6, images: ["/assets/732253170_1009973652011696_2448383532522583757_n.jpg"] },
-      { id: "lm-07-42", sku: "LM-RES-WHT-42", size: "42 (Chest 44)", color: "Pearl White", price: 4500, stock: 7, images: ["/assets/732253170_1009973652011696_2448383532522583757_n.jpg"] },
-      { id: "lm-07-44", sku: "LM-RES-WHT-44", size: "44 (Chest 46)", color: "Pearl White", price: 4500, stock: 3, images: ["/assets/732253170_1009973652011696_2448383532522583757_n.jpg"] },
+      { id: "v-09-m", sku: "SLZ-CF-M", size: "M (30-32)", color: "Pitch Black", price: 890, stock: 15, images: ["/assets/slazenger-cuffed-joggers.jpg"] },
+      { id: "v-09-l", sku: "SLZ-CF-L", size: "L (33-35)", color: "Pitch Black", price: 890, stock: 20, images: ["/assets/slazenger-cuffed-joggers.jpg"] },
+      { id: "v-09-xl", sku: "SLZ-CF-XL", size: "XL (36-38)", color: "Pitch Black", price: 890, stock: 12, images: ["/assets/slazenger-cuffed-joggers.jpg"] },
+      { id: "v-09-xxl", sku: "SLZ-CF-XXL", size: "XXL (39-42)", color: "Pitch Black", price: 890, stock: 8, images: ["/assets/slazenger-cuffed-joggers.jpg"] },
     ],
   },
   {
-    id: "lm-08",
-    name: "The Ivory Rose Buta Chikankari Panjabi",
-    slug: "ivory-rose-buta-chikankari-panjabi",
-    price: 3950,
-    compareAtPrice: 4600,
-    image: "/assets/728503334_1002964499379278_6332609520572502345_n.jpg",
+    id: "ga-10",
+    name: "Lincoln UK Layered Mock-Collar Quarter-Zip Knit Pullover",
+    slug: "lincoln-uk-layered-mock-collar-quarter-zip-knit-pullover",
+    price: 1490,
+    compareAtPrice: 2600,
+    image: "/assets/lincoln-quarter-zip-pullover.jpg",
     images: [
-      "/assets/728503334_1002964499379278_6332609520572502345_n.jpg",
-      "/assets/732253170_1009973652011696_2448383532522583757_n.jpg",
+      "/assets/lincoln-quarter-zip-pullover.jpg",
+      "/assets/sea-barrier-chino-pants.jpg",
     ],
-    category: "Classic Signature Cotton",
-    categorySlug: "classic-cotton",
-    isNew: false,
-    isFeatured: false,
-    stock: 22,
-    fabric: "Pure Breathable Muslin Cotton",
-    craftsmanship: "Delicate Lucknowi Rose Buta Embroidery",
-    colorName: "Natural Off-White",
-    description:
-      "Lightweight, breathable, and deeply soulful. Handcrafted from premium muslin cotton featuring delicate all-over Chikankari rose buta motifs, loop button closures, and an airy relaxed silhouette perfect for warm festivities.",
-    specifications: [
-      { label: "Fabric", value: "100% Breathable Muslin Cotton" },
-      { label: "Embroidery", value: "Hand-finished Rose Buta Chikankari" },
-      { label: "Fastening", value: "Loop Fasteners with Fabric Potli Studs" },
-      { label: "Collar", value: "Soft Stand Band Collar" },
-    ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
-    variants: [
-      { id: "lm-08-38", sku: "LM-BUT-IVR-38", size: "38 (Chest 40)", color: "Off-White", price: 3950, stock: 4, images: ["/assets/728503334_1002964499379278_6332609520572502345_n.jpg"] },
-      { id: "lm-08-40", sku: "LM-BUT-IVR-40", size: "40 (Chest 42)", color: "Off-White", price: 3950, stock: 6, images: ["/assets/728503334_1002964499379278_6332609520572502345_n.jpg"] },
-      { id: "lm-08-42", sku: "LM-BUT-IVR-42", size: "42 (Chest 44)", color: "Off-White", price: 3950, stock: 8, images: ["/assets/728503334_1002964499379278_6332609520572502345_n.jpg"] },
-      { id: "lm-08-44", sku: "LM-BUT-IVR-44", size: "44 (Chest 46)", color: "Off-White", price: 3950, stock: 4, images: ["/assets/728503334_1002964499379278_6332609520572502345_n.jpg"] },
-    ],
-  },
-  {
-    id: "lm-09",
-    name: "The Silver Foliage Collar & Cuffs Panjabi",
-    slug: "silver-foliage-collar-cuffs-panjabi",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: "/assets/726432719_1002041632804898_4565876842780552996_n.jpg",
-    images: [
-      "/assets/726432719_1002041632804898_4565876842780552996_n.jpg",
-      "/assets/728570183_1003994135942981_1995203835787078592_n.jpg",
-    ],
-    category: "Classic Signature Cotton",
-    categorySlug: "classic-cotton",
-    isNew: false,
-    isFeatured: false,
-    stock: 25,
-    fabric: "Micro-texture Dobby Weave Cotton",
-    craftsmanship: "Silver Foliage Foil & Threadwork Collar/Cuffs",
-    colorName: "Frost White",
-    description:
-      "Understated modern minimalism. Micro-textured white dobby cotton elevated with silver metallic foliage motif embroidery along the collar and cuffs, matched with fabric-covered shank buttons.",
-    specifications: [
-      { label: "Fabric", value: "Micro-texture Dobby Combed Cotton" },
-      { label: "Accents", value: "Silver Foil Foliage Collar & Cuffs" },
-      { label: "Buttons", value: "Matching Fabric Potli Shank Buttons" },
-      { label: "Collar", value: "Tailored Clean Mandarin Collar" },
-    ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
-    variants: [
-      { id: "lm-09-38", sku: "LM-SLV-WHT-38", size: "38 (Chest 40)", color: "Frost White", price: 3850, stock: 5, images: ["/assets/726432719_1002041632804898_4565876842780552996_n.jpg"] },
-      { id: "lm-09-40", sku: "LM-SLV-WHT-40", size: "40 (Chest 42)", color: "Frost White", price: 3850, stock: 7, images: ["/assets/726432719_1002041632804898_4565876842780552996_n.jpg"] },
-      { id: "lm-09-42", sku: "LM-SLV-WHT-42", size: "42 (Chest 44)", color: "Frost White", price: 3850, stock: 8, images: ["/assets/726432719_1002041632804898_4565876842780552996_n.jpg"] },
-      { id: "lm-09-44", sku: "LM-SLV-WHT-44", size: "44 (Chest 46)", color: "Frost White", price: 3850, stock: 5, images: ["/assets/726432719_1002041632804898_4565876842780552996_n.jpg"] },
-    ],
-  },
-  {
-    id: "lm-10",
-    name: "The Champagne Jacquard Chevron Accent Panjabi",
-    slug: "champagne-jacquard-chevron-accent-panjabi",
-    price: 4150,
-    compareAtPrice: 4800,
-    image: "/assets/730084646_1004632885879106_4033408280096934129_n.jpg",
-    images: [
-      "/assets/730084646_1004632885879106_4033408280096934129_n.jpg",
-      "/assets/727886407_1003812822627779_5320585349107522996_n.jpg",
-    ],
-    category: "Festive Eid Collection",
-    categorySlug: "festive-eid",
-    isNew: false,
+    category: "Sweaters & Winter Drops",
+    categorySlug: "sweaters-winter",
+    collectionSlug: "winter-is-back",
+    isNew: true,
     isFeatured: true,
-    stock: 20,
-    fabric: "Vertical Self-Stripe Jacquard Cotton",
-    craftsmanship: "Black Chevron Lace Needlework on Cuffs",
-    colorName: "Biscuit Beige & Black",
+    isBestseller: true,
+    stock: 35,
+    fabric: "Fine Gauge Cotton-Cashmere Blend Knit with Woven Plaid Trim",
+    craftsmanship: "2-in-1 Layered Plaid Collar Inset, Antique Zipper Pull & Ribbed Cuffs",
+    colorName: "Heather Ice Blue / Melange Grey",
     description:
-      "A subtle harmony of textures. Biscuit beige champagne self-stripe jacquard fabric paired with striking black chevron lace embroidery accents on the cuffs and dark gunmetal dome buttons on the placket.",
+      "Authentic UK export piece from Lincoln (£24 retail tag attached = approx ৳3,800). Crafted with soft ribbed cotton knit in heather ice blue, featuring an integrated woven plaid shirt collar insert and metal quarter-zip puller. Sophisticated 2-in-1 layered sweater look without the bulk. Perfect for winter, office, and smart dinners.",
     specifications: [
-      { label: "Fabric", value: "Vertical Self-stripe Textured Cotton Jacquard" },
-      { label: "Cuff Accent", value: "Contrast Black Chevron Lace Embroidery" },
-      { label: "Buttons", value: "Gunmetal Metallic Round Buttons" },
-      { label: "Collar", value: "Structured Mandarin Collar" },
+      { label: "Brand Origin", value: "Lincoln (UK Official Export Surplus)" },
+      { label: "Original Retail Tag", value: "£24.00 (Attached with Barcode)" },
+      { label: "Sweater Style", value: "Layered Mock Collar Quarter-Zip Pullover" },
+      { label: "Collar Trim", value: "Woven Tartan Plaid Shirt Collar Inset" },
+      { label: "Fabric", value: "Fine Cotton Knit with Breathable Insulation" },
+      { label: "Sizes Available", value: "S, M, L, XL, XXL (European Sizing)" },
+      { label: "Season", value: "Winter Drop 2026 Collection" },
     ],
-    deliveryInfo: "ঢাকা সিটির ভেতরে ২৪-৪৮ ঘণ্টায় ডেলিভারি (৳১০০)। ঢাকার বাইরে সারাদেশে ২-৩ দিনে হোম ডেলিভারি (৳২০০)।",
+    deliveryInfo:
+      "ঢাকা সিটির ভেতরে ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ক্যাশ অন ডেলিভারি (চার্জ ৮০৳)। ঢাকার বাইরে সারাদেশে ২-৩ দিনের মধ্যে কুরিয়ার ডেলিভারি (চার্জ ১৫০৳)।",
     variants: [
-      { id: "lm-10-38", sku: "LM-CHV-BEI-38", size: "38 (Chest 40)", color: "Biscuit Beige", price: 4150, stock: 4, images: ["/assets/730084646_1004632885879106_4033408280096934129_n.jpg"] },
-      { id: "lm-10-40", sku: "LM-CHV-BEI-40", size: "40 (Chest 42)", color: "Biscuit Beige", price: 4150, stock: 6, images: ["/assets/730084646_1004632885879106_4033408280096934129_n.jpg"] },
-      { id: "lm-10-42", sku: "LM-CHV-BEI-42", size: "42 (Chest 44)", color: "Biscuit Beige", price: 4150, stock: 6, images: ["/assets/730084646_1004632885879106_4033408280096934129_n.jpg"] },
-      { id: "lm-10-44", sku: "LM-CHV-BEI-44", size: "44 (Chest 46)", color: "Biscuit Beige", price: 4150, stock: 4, images: ["/assets/730084646_1004632885879106_4033408280096934129_n.jpg"] },
+      { id: "v-10-s", sku: "LNC-BLU-S", size: "S", color: "Heather Ice Blue", price: 1490, stock: 5, images: ["/assets/lincoln-quarter-zip-pullover.jpg"] },
+      { id: "v-10-m", sku: "LNC-BLU-M", size: "M", color: "Heather Ice Blue", price: 1490, stock: 10, images: ["/assets/lincoln-quarter-zip-pullover.jpg"] },
+      { id: "v-10-l", sku: "LNC-BLU-L", size: "L", color: "Heather Ice Blue", price: 1490, stock: 10, images: ["/assets/lincoln-quarter-zip-pullover.jpg"] },
+      { id: "v-10-xl", sku: "LNC-BLU-XL", size: "XL", color: "Heather Ice Blue", price: 1490, stock: 6, images: ["/assets/lincoln-quarter-zip-pullover.jpg"] },
+      { id: "v-10-xxl", sku: "LNC-BLU-XXL", size: "XXL", color: "Heather Ice Blue", price: 1490, stock: 4, images: ["/assets/lincoln-quarter-zip-pullover.jpg"] },
     ],
   },
 ];
 
-// ═══════════════════════════════════════════
-// Filtered Collections
-// ═══════════════════════════════════════════
-export const NEW_ARRIVALS = ALL_PRODUCTS.filter((p) => p.isNew);
-export const FEATURED_PRODUCTS = ALL_PRODUCTS.filter((p) => p.isFeatured);
-export const ROYAL_HERITAGE_PRODUCTS = ALL_PRODUCTS.filter((p) => p.categorySlug === "royal-heritage");
-export const FESTIVE_EID_PRODUCTS = ALL_PRODUCTS.filter((p) => p.categorySlug === "festive-eid");
-export const CLASSIC_COTTON_PRODUCTS = ALL_PRODUCTS.filter((p) => p.categorySlug === "classic-cotton");
-export const EVENING_BLACK_PRODUCTS = ALL_PRODUCTS.filter((p) => p.categorySlug === "evening-black");
-export const LUXURY_SILK_PRODUCTS = ALL_PRODUCTS.filter((p) => p.categorySlug === "luxury-silk-jacquard");
-
-// Helper to filter products by category slug
-export function getProductsByCategory(slug: string): DetailedProduct[] {
-  switch (slug) {
-    case "royal-heritage":
-    case "wedding":
-      return ROYAL_HERITAGE_PRODUCTS;
-    case "festive-eid":
-    case "eid":
-      return FESTIVE_EID_PRODUCTS;
-    case "classic-cotton":
-    case "cotton":
-      return CLASSIC_COTTON_PRODUCTS;
-    case "evening-black":
-    case "black":
-      return EVENING_BLACK_PRODUCTS;
-    case "luxury-silk-jacquard":
-    case "silk":
-    case "jacquard":
-      return LUXURY_SILK_PRODUCTS;
-    case "new-arrivals":
-      return NEW_ARRIVALS;
-    case "featured":
-      return FEATURED_PRODUCTS;
-    default:
-      return ALL_PRODUCTS;
-  }
+export function getProductsByCategory(categorySlug: string): DetailedProduct[] {
+  return ALL_PRODUCTS.filter((p) => p.categorySlug === categorySlug);
 }
+
+export function getProductBySlug(slug: string): DetailedProduct | undefined {
+  return ALL_PRODUCTS.find((p) => p.slug === slug);
+}
+
+export function getFeaturedProducts(): DetailedProduct[] {
+  return ALL_PRODUCTS.filter((p) => p.isFeatured);
+}
+
+export function getProductsByCollection(collectionSlug: string): DetailedProduct[] {
+  return ALL_PRODUCTS.filter((p) => p.collectionSlug === collectionSlug);
+}
+

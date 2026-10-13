@@ -25,7 +25,7 @@ export default function WishlistPage() {
             </p>
           </div>
           <Link
-            href="/collections/new-arrivals"
+            href="/shop"
             className="inline-flex items-center justify-center h-12 px-8 mt-4 rounded-lg bg-foreground text-background text-sm font-medium hover:bg-foreground/90 transition-colors cursor-pointer"
           >
             Explore Products

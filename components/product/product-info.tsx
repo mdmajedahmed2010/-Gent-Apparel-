@@ -255,8 +255,8 @@ export function ProductInfo({
   return (
     <div className="space-y-6">
       {/* Category/Brand overline */}
-      <p className="text-[10.5px] md:text-[11px] font-editorial-label text-[#c9a96e]">
-        LIHAAZ BY MINHAAZ — ROYAL HERITAGE COUTURE
+      <p className="text-[10.5px] md:text-[11px] font-editorial-label text-[#c8a265]">
+        GENT APPAREL BD — BETTER QUALITY, BETTER STYLE!
       </p>
 
       {/* Product Name */}
@@ -411,10 +411,10 @@ export function ProductInfo({
                   placeholder="যেমন: বিশেষ কোনো সাইজ মেজারমেন্ট বা উপহারের বিশেষ রিকোয়েস্ট থাকলে এখানে লিখুন..."
                   className="w-full p-3.5 border border-border/60 bg-white text-sm transition-all focus:outline-none focus:border-foreground focus:ring-1 focus:ring-foreground rounded-sm resize-none shadow-inner"
                 />
-                <div className="mt-3 flex items-start gap-2 bg-amber-50 p-3 rounded-sm border border-amber-100">
-                  <Info className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                  <p className="text-[10px] text-amber-800 font-medium leading-relaxed">
-                    গুলশান-২ স্টুডিও ভিজিট বা কাস্টম ফিটিংস/গ্রুমিং অর্ডারের জন্য আমাদের কনসিয়ার্জ হটলাইনে যোগাযোগ করুন: +880 1755-627874.
+                <div className="mt-3 flex items-start gap-2 bg-amber-50 dark:bg-neutral-900 p-3 rounded-sm border border-amber-200 dark:border-neutral-800">
+                  <Info className="h-4 w-4 text-[#c8a265] shrink-0 mt-0.5" />
+                  <p className="text-[10px] text-amber-900 dark:text-amber-200 font-medium leading-relaxed">
+                    সরাসরি সাইজিং পরামর্শ বা বিশেষ ডেলিভারি নির্দেশনার জন্য আমাদের WhatsApp হটলাইনে যোগাযোগ করুন: 01560-018131.
                   </p>
                 </div>
               </div>
@@ -575,10 +575,10 @@ export function ProductInfo({
           onToggle={() => toggleSection("shipping")}
         >
           <div className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
-            <p>• ঢাকা সিটির ভেতরে ডেলিভারি চার্জ: <strong>৳১০০</strong> (২৪–৪৮ ঘণ্টার মধ্যে হোম ডেলিভারি)।</p>
-            <p>• ঢাকার বাইরে ডেলিভারি চার্জ: <strong>৳২০০</strong> (৪৮–৭২ ঘণ্টার মধ্যে হোম ডেলিভারি)।</p>
-            <p>• <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery):</strong> সারাদেশে ক্যাশ অন ডেলিভারি সুবিধা রয়েছে। ডেলিভারিম্যানের সামনে পার্সেল খুলে গুণগত মান ও সাইজ চেক করে মূল্য পরিশোধ করুন।</p>
-            <p>• গুলশান-২ স্টুডিও ভিজিট ও ওয়াক-ইন ট্রায়াল: House-5, Road 54/A, Gulshan-2, Dhaka (হটলাইন / WhatsApp: +880 1755-627874)।</p>
+            <p>• ঢাকা সিটির ভেতরে ডেলিভারি চার্জ: <strong>৳৮০</strong> (২৪–৪৮ ঘণ্টার মধ্যে হোম ডেলিভারি)।</p>
+            <p>• ঢাকার বাইরে ডেলিভারি চার্জ: <strong>৳১৫০</strong> (২–৩ দিনের মধ্যে হোম ডেলিভারি)।</p>
+            <p>• <strong>ক্যাশ অন ডেলিভারি (Cash on Delivery):</strong> সারাদেশে ক্যাশ অন ডেলিভারি সুবিধা রয়েছে। ডেলিভারিম্যানের সামনে পার্সেল খুলে গুণগত মান ও সাইজ চেক করে নিশ্চিন্তে মূল্য পরিশোধ করুন।</p>
+            <p>• কাস্টমার সাপোর্ট ও হটলাইন: Lalbagh, Dhaka-1211 (কল / WhatsApp: 01560-018131)।</p>
           </div>
         </AccordionItem>
       </div>

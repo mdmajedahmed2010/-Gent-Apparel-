@@ -10,13 +10,13 @@ import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown, X } from "lucide-react";
 
-const sizes = ["S", "M", "L", "XL", "Free Size"];
+const sizes = ["30", "32", "34", "36", "38", "M", "L", "XL", "XXL"];
 
 const priceRanges = [
-  { label: "Under ৳2,000", value: "0-2000" },
-  { label: "৳2,000 - ৳3,000", value: "2000-3000" },
-  { label: "৳3,000 - ৳5,000", value: "3000-5000" },
-  { label: "Above ৳5,000", value: "5000-99999" },
+  { label: "Under ৳1,500", value: "0-1500" },
+  { label: "৳1,500 - ৳2,000", value: "1500-2000" },
+  { label: "৳2,000 - ৳2,500", value: "2000-2500" },
+  { label: "Above ৳2,500", value: "2500-99999" },
 ];
 
 export function CollectionFilters() {

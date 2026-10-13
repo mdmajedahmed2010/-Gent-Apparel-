@@ -44,17 +44,17 @@ export async function generateMetadata({
   // Check special categories first
   if (specialCategories[slug]) {
     return {
-      title: `${specialCategories[slug].name} Collection`,
+      title: `${specialCategories[slug].name} Collection — Gent Apparel BD`,
       description: specialCategories[slug].description,
     };
   }
 
   // Otherwise fetch from DB
   const res = await getCollectionBySlug(slug);
-  if (!res.success || !res.collection) return { title: "Collection Not Found" };
+  if (!res.success || !res.collection) return { title: "Collection Not Found — Gent Apparel BD" };
 
   return {
-    title: `${res.collection.name} Collection`,
+    title: `${res.collection.name} Collection — Gent Apparel BD | Better Quality, Better Style!`,
     description: res.collection.description || `Browse our ${res.collection.name} collection`,
   };
 }
@@ -155,7 +155,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : "/images/products/placeholder.jpg";
+        : (p.image || "/assets/banner.jpg");
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 

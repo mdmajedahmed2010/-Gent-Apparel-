@@ -1,11 +1,11 @@
 {
-  "name": "Lihaaz by Minhaaz — Royal Heritage Menswear",
-  "short_name": "Lihaaz",
-  "description": "Designer Menswear, Bespoke Panjabis & Royal Heritage Festive Attire",
+  "name": "Gent Apparel BD — Better Quality, Better Style!",
+  "short_name": "Gent Apparel",
+  "description": "100% Authentic Export-Quality Menswear, Premium Denim Jeans, Italian Gabardines & Activewear",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f0e0d",
-  "theme_color": "#c9a96e",
+  "background_color": "#0a0a0a",
+  "theme_color": "#c8a265",
   "orientation": "portrait-primary",
   "icons": [
     {

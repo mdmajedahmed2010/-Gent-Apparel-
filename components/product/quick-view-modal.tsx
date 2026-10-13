@@ -299,7 +299,7 @@ function QuickViewModalInner({ product, onClose }: QuickViewModalInnerProps) {
           {/* Category / Brand Overline */}
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mb-1">
-              {product.category || "LIHAAZ BY MINHAAZ — ROYAL HERITAGE"}
+              {product.category || "GENT APPAREL BD — 100% EXPORT SURPLUS"}
             </p>
             <h2 className="text-xl md:text-2xl font-bold leading-tight font-heading text-foreground tracking-[-0.01em]">
               {product.name}

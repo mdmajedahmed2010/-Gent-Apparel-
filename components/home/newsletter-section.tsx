@@ -47,10 +47,10 @@ export function NewsletterSection() {
           Stay Updated
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3 font-heading">
-          Join the Lihaaz Royal Circle
+          Join the Gent Apparel Club
         </h2>
         <p className="text-sm text-white/60 max-w-sm mx-auto mb-8 font-sans">
-          Subscribe for exclusive royal heritage Panjabi drops, new festive collections, and private preview offers.
+          Subscribe for 100% authentic export denim drops, winter collections, and exclusive limited offers.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

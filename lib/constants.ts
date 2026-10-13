@@ -1,19 +1,20 @@
 /**
- * LIHAAZ BY MINHAAZ — Application Constants
- * Bespoke Luxury Panjabi Couture & Men's Heritage Attire
- * Studio: House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh
- * Hotline: +880 1755-627874 | 01755-627874
- * Facebook: https://www.facebook.com/lihaazbyminhaaz/
+ * GENT APPAREL BD — Application Constants
+ * 100% Authentic Export-Quality Menswear, Premium Denim & Smart Casuals
+ * Outlet / Hub: Lalbagh, Dhaka-1211, Bangladesh
+ * Hotline / WhatsApp: +880 1560-018131 | 01560-018131
+ * Official Facebook: https://www.facebook.com/gentapparelbd
+ * Official Instagram: https://www.instagram.com/gent_apparel_bd
  */
 
-// Delivery Charges (BDT) — Verified against official policy
+// Delivery Charges (BDT) — Verified against Gent Apparel BD official policy
 export const DELIVERY_CHARGE = {
-  DHAKA_INSIDE: 100,
-  OUTSIDE_DHAKA: 200,
+  DHAKA_INSIDE: 80,
+  OUTSIDE_DHAKA: 150,
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "LM";
+export const ORDER_PREFIX = "GA";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -77,22 +78,24 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60, // 1 hour
 } as const;
 
-// Business Info — Lihaaz by Minhaaz
+// Business Info — Gent Apparel BD
 export const BUSINESS = {
-  NAME: "Lihaaz by Minhaaz",
-  TAGLINE: "Elegance in Every Thread | Bespoke Luxury Panjabi Couture",
-  PHONE: "+880 1755-627874",
-  HOTLINE: "+880 1755-627874",
-  HOTLINE_DISPLAY: "01755-627874",
-  WHATSAPP: "01755627874",
-  WHATSAPP_LINK: "https://wa.me/8801755627874",
-  EMAIL: "lihaazbyminhaaz@gmail.com",
-  ADDRESS: "House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh",
-  STUDIO_HOURS: "Saturday - Thursday (11:00 AM - 9:00 PM), Friday (3:00 PM - 9:30 PM)",
-  MARKET: "Gulshan-2, Dhaka-1212",
-  FACEBOOK: "https://www.facebook.com/lihaazbyminhaaz/",
-  INSTAGRAM: "https://www.instagram.com/lihaazbyminhaaz",
-  TIKTOK: "https://www.tiktok.com/@lihaazbyminhaaz",
+  NAME: "Gent Apparel BD",
+  SHORT_NAME: "Gent Apparel",
+  TAGLINE: "Better Quality, Better Style!",
+  SUBTITLE: "100% Authentic Export-Quality Men's Fashion & Denim",
+  PHONE: "+880 1560-018131",
+  HOTLINE: "+880 1560-018131",
+  HOTLINE_DISPLAY: "01560-018131",
+  WHATSAPP: "01560018131",
+  WHATSAPP_LINK: "https://wa.me/8801560018131",
+  EMAIL: "gentapparelbd@gmail.com",
+  ADDRESS: "Lalbagh, Dhaka-1211, Bangladesh",
+  STUDIO_HOURS: "Everyday (10:00 AM - 10:00 PM)",
+  MARKET: "Lalbagh, Dhaka-1211",
+  FACEBOOK: "https://www.facebook.com/gentapparelbd",
+  INSTAGRAM: "https://www.instagram.com/gent_apparel_bd",
+  TIKTOK: "https://www.tiktok.com/@gentapparelbd",
 } as const;
 
 // Currency
@@ -107,9 +110,9 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  LIHAAZ10: { type: "percent", value: 10, label: "10% off your royal order" },
-  EIDSPECIAL: { type: "percent", value: 15, label: "15% Eid Festive Privilege" },
-  ROYAL500: { type: "flat", value: 500, label: "৳500 flat bespoke discount" },
-  WELCOME: { type: "flat", value: 200, label: "৳200 Welcome Gift" },
-  WEDDING1000: { type: "flat", value: 1000, label: "৳1,000 Wedding Edition Privilege" },
+  GENT10: { type: "percent", value: 10, label: "10% off your first order" },
+  WINTERDROP: { type: "percent", value: 15, label: "15% Winter Collection Privilege" },
+  DENIM300: { type: "flat", value: 300, label: "৳300 flat export denim discount" },
+  WELCOME: { type: "flat", value: 150, label: "৳150 Welcome Gift" },
+  FREESHIP: { type: "flat", value: 80, label: "Free Inside Dhaka Delivery" },
 } as const;

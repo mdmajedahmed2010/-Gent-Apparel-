@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * LIHAAZ BY MINHAAZ — New Arrivals Grid
- * Royal Heritage Panjabi Couture Grid with Framer Motion.
+ * GENT APPAREL BD — New Arrivals Grid
+ * 100% Authentic Export Clothing Grid with Framer Motion.
  */
 
 import Link from "next/link";

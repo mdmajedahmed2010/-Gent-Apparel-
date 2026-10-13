@@ -1,5 +1,5 @@
 /**
- * LIHAAZ BY MINHAAZ — JSON-LD Structured Data Components
+ * GENT APPAREL BD — JSON-LD Structured Data Components
  * SEO (Organization, BreadcrumbList, Product schemas)
  */
 
@@ -9,13 +9,13 @@ export function OrganizationJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
-    name: "Lihaaz by Minhaaz",
-    alternateName: "লিহাজ বাই মিনহাজ",
+    name: "Gent Apparel BD",
+    alternateName: "জেন্ট অ্যাপারেল বিডি",
     description: BUSINESS.TAGLINE,
     telephone: BUSINESS.HOTLINE,
     email: BUSINESS.EMAIL,
-    url: "https://lihaazbyminhaaz.com",
-    logo: "https://lihaazbyminhaaz.com/assets/logo.jpg",
+    url: "https://gentapparelbd.com",
+    logo: "https://gentapparelbd.com/assets/logo.jpg",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: BUSINESS.HOTLINE,
@@ -23,12 +23,12 @@ export function OrganizationJsonLd() {
       areaServed: "BD",
       availableLanguage: ["Bengali", "English"],
     },
-    sameAs: [BUSINESS.FACEBOOK, BUSINESS.WHATSAPP],
+    sameAs: [BUSINESS.FACEBOOK, BUSINESS.INSTAGRAM],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "House-5, Road 54/A, Gulshan-2",
+      streetAddress: "Lalbagh",
       addressLocality: "Dhaka",
-      postalCode: "1212",
+      postalCode: "1211",
       addressCountry: "BD",
     },
   };
@@ -45,13 +45,13 @@ export function WebsiteJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Lihaaz by Minhaaz",
-    url: "https://lihaazbyminhaaz.com",
+    name: "Gent Apparel BD",
+    url: "https://gentapparelbd.com",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://lihaazbyminhaaz.com/search?q={search_term_string}",
+        urlTemplate: "https://gentapparelbd.com/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -78,14 +78,14 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lihaazbyminhaaz.com",
+        item: "https://gentapparelbd.com",
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
         name: item.name,
         ...(item.url && {
-          item: `https://lihaazbyminhaaz.com${item.url}`,
+          item: `https://gentapparelbd.com${item.url}`,
         }),
       })),
     ],

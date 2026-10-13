@@ -10,7 +10,7 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
 };
 
-import { ALL_PRODUCTS, CATEGORIES } from "@/lib/demo-data";
+import { ALL_PRODUCTS, CATEGORIES, COLLECTIONS } from "@/lib/demo-data";
 
 function createDummyPrisma() {
   const dummy: any = new Proxy({} as any, {
@@ -49,7 +49,17 @@ function createDummyPrisma() {
             const method = String(modelProp);
 
             if (model === "product") {
-              if (method === "findMany") return ALL_PRODUCTS;
+              if (method === "findMany") {
+                const idIn = args[0]?.where?.id?.in;
+                if (Array.isArray(idIn)) {
+                  return ALL_PRODUCTS.filter((p) => idIn.includes(p.id));
+                }
+                const catSlug = args[0]?.where?.category?.slug;
+                if (catSlug) {
+                  return ALL_PRODUCTS.filter((p) => p.categorySlug === catSlug || (p as any).category?.slug === catSlug);
+                }
+                return ALL_PRODUCTS;
+              }
               if (method === "findUnique" || method === "findFirst") {
                 const slug = args[0]?.where?.slug;
                 const id = args[0]?.where?.id;
@@ -67,19 +77,29 @@ function createDummyPrisma() {
               if (method === "count") return CATEGORIES.length;
             }
 
+            if (model === "collection") {
+              if (method === "findMany") return COLLECTIONS;
+              if (method === "findUnique" || method === "findFirst") {
+                const slug = args[0]?.where?.slug;
+                const id = args[0]?.where?.id;
+                return COLLECTIONS.find((c) => (slug && c.slug === slug) || (id && (c as any).id === id)) || null;
+              }
+              if (method === "count") return COLLECTIONS.length;
+            }
+
             if (model === "sitesetting") {
               if (method === "findUnique") {
                 const key = args[0]?.where?.key;
-                if (key === "store_name") return { key: "store_name", value: "Lihaaz by Minhaaz" };
+                if (key === "store_name") return { key: "store_name", value: "Gent Apparel BD" };
                 if (key === "favicon_url") return { key: "favicon_url", value: "/assets/logo.jpg" };
                 if (key === "logo_url") return { key: "logo_url", value: "/assets/logo.jpg" };
                 return null;
               }
               if (method === "findMany") return [
-                { key: "store_name", value: "Lihaaz by Minhaaz" },
-                { key: "store_tagline", value: "Designer Menswear & Royal Heritage Panjabi" },
-                { key: "store_phone", value: "+880 1755-627874" },
-                { key: "store_address", value: "House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh" },
+                { key: "store_name", value: "Gent Apparel BD" },
+                { key: "store_tagline", value: "Better Quality, Better Style! | 100% Export Menswear" },
+                { key: "store_phone", value: "+880 1560-018131" },
+                { key: "store_address", value: "Lalbagh, Dhaka-1211, Bangladesh" },
                 { key: "logo_url", value: "/assets/logo.jpg" },
                 { key: "favicon_url", value: "/assets/logo.jpg" },
               ];

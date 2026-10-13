@@ -4,8 +4,8 @@ import { ProductCard } from "@/components/product/product-card";
 import { getProducts } from "@/actions/product.actions";
 
 export const metadata: Metadata = {
-  title: "Search Panjabis — Lihaaz by Minhaaz",
-  description: "Search Lihaaz by Minhaaz royal heritage Panjabis, festive Eid collections, raw silk, and embroidered attire.",
+  title: "Search Menswear — Gent Apparel BD | Better Quality, Better Style!",
+  description: "Search Gent Apparel BD authentic export surplus denim jeans, chinos, joggers, and winter sweaters.",
 };
 
 interface SearchPageProps {
@@ -40,7 +40,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       price: variantPrice,
       compareAtPrice: Math.round(variantPrice * 1.3),
       image,
-      category: p.category?.name || "Streetwear",
+      category: p.category?.name || "Export Menswear",
       isNew: p.isFeatured,
     };
   });
@@ -56,7 +56,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <p className="text-xs md:text-sm text-muted-foreground mt-2">
           {query
             ? `Found ${mappedProducts.length} ${mappedProducts.length === 1 ? "item" : "items"} matching your query.`
-            : "Use the search bar above to discover our streetwear collections."}
+            : "Use the search bar above to discover our export denim, chinos, and menswear collections."}
         </p>
       </div>
 

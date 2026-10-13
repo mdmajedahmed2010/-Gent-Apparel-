@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://lihaazbyminhaaz.com";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://gentapparelbd.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -19,11 +19,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const categories = [
-    "/categories/royal-heritage",
-    "/categories/festive-eid",
-    "/categories/classic-cotton",
-    "/categories/evening-black",
-    "/categories/luxury-silk-jacquard",
+    "/categories/denim-jeans",
+    "/categories/chino-pants",
+    "/categories/sports-trousers",
+    "/categories/knitwear-sweaters",
+    "/categories/export-casuals",
+    "/collections/winter-is-back",
+    "/collections/super-premium-denim",
+    "/collections/italian-attitude",
+    "/collections/athletic-streetwear",
   ];
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((path) => ({

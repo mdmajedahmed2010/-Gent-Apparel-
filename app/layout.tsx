@@ -25,41 +25,43 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-// Global metadata for Lihaaz by Minhaaz
+// Global metadata for Gent Apparel BD
 export const metadata: Metadata = {
   title: {
-    default: "Lihaaz by Minhaaz — Designer Menswear & Royal Heritage Panjabi",
-    template: "%s — Lihaaz by Minhaaz",
+    default: "Gent Apparel BD — Better Quality, Better Style! | 100% Export Menswear",
+    template: "%s — Gent Apparel BD",
   },
   description:
-    "Official store of Lihaaz by Minhaaz (লিহাজ বাই মিনহাজ). Discover bespoke designer Panjabis, opulent silk jacquards, and intricate zardozi embroidery from our Gulshan-2 studio. Nationwide Cash on Delivery with parcel inspection before payment.",
+    "Official store of Gent Apparel BD (জেন্ট অ্যাপারেল বিডি). Discover 100% authentic original export denim jeans (Lucky Brand, Sea Barrier, Il Granchio), Italian gabardine chinos, Slazenger track pants, and UK winter knitwear. Hub: Lalbagh, Dhaka. Nationwide Cash on Delivery with parcel inspection before payment.",
   keywords: [
-    "Lihaaz by Minhaaz",
-    "Lihaaz Panjabi",
-    "Lihaaz by Minhaaz Gulshan",
-    "designer Panjabi Dhaka",
-    "royal heritage Panjabi",
-    "festive Eid Panjabi 2026",
-    "wedding Panjabi menswear Bangladesh",
-    "luxury zardozi embroidery",
-    "bespoke men's ethnic wear",
-    "Gulshan 2 fashion studio",
+    "Gent Apparel BD",
+    "Gent Apparel",
+    "gentapparelbd",
+    "export denim Bangladesh",
+    "Lucky Brand jeans Dhaka",
+    "Sea Barrier Italian pants",
+    "IL Granchio jeans",
+    "Slazenger track pants BD",
+    "Lincoln UK sweater Dhaka",
+    "mens fashion Dhaka",
+    "Lalbagh clothing store",
+    "authentic export surplus Bangladesh",
   ],
-  authors: [{ name: "Lihaaz by Minhaaz" }],
-  creator: "Lihaaz by Minhaaz",
+  authors: [{ name: "Gent Apparel BD" }],
+  creator: "Gent Apparel BD",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Lihaaz by Minhaaz",
-    title: "Lihaaz by Minhaaz — Designer Menswear & Royal Heritage Panjabi",
+    siteName: "Gent Apparel BD",
+    title: "Gent Apparel BD — Better Quality, Better Style! | 100% Export Menswear",
     description:
-      "Exclusive designer Panjabi couture, royal wedding ensembles, and festive luxury from Lihaaz by Minhaaz (House-5, Road 54/A, Gulshan-2, Dhaka).",
+      "Better Quality, Better Style! 100% authentic export-quality denim jeans, gabardines, activewear, and winter knitwear from Gent Apparel BD (Lalbagh, Dhaka).",
     images: [
       {
         url: "/assets/banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Lihaaz by Minhaaz Royal Heritage Collection",
+        alt: "Gent Apparel BD — Better Quality, Better Style!",
       },
     ],
   },
@@ -75,12 +77,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Lihaaz by Minhaaz",
+    title: "Gent Apparel BD",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0f0e0d",
+  themeColor: "#0a0a0a",
 };
 
 export default async function RootLayout({

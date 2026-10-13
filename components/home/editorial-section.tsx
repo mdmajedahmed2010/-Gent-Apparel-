@@ -1,14 +1,15 @@
 "use client";
 
 /**
- * LIHAAZ BY MINHAAZ — Short Brand Story Section (Homepage)
- * Gulshan-2 design studio, bespoke zardozi embroidery & royal heritage couture.
+ * GENT APPAREL BD — Short Brand Story Section (Homepage)
+ * Better Quality, Better Style!
+ * Lalbagh, Dhaka-1211 | Hotline / WhatsApp: 01560-018131
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
 function ImageWithSkeleton({
@@ -61,11 +62,11 @@ export function EditorialSection() {
             }}
             className="lg:col-span-5 relative group"
           >
-            <div className="absolute -inset-2 bg-[#f4eee1] border border-[#c9a96e]/25 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
+            <div className="absolute -inset-2 bg-[#f4eee1] border border-[#c8a265]/25 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-neutral-100 shadow-md">
               <ImageWithSkeleton
-                src="/assets/731105183_122137979606871146_8917897017688220084_n.jpg"
-                alt="Lihaaz by Minhaaz — Royal Heritage Champagne Panjabi"
+                src="/assets/banner.jpg"
+                alt="Gent Apparel BD — Better Quality, Better Style!"
                 className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
@@ -86,42 +87,46 @@ export function EditorialSection() {
           >
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[#c9a96e] animate-pulse" />
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#c9a96e] font-bold">
-                  ABOUT LIHAAZ BY MINHAAZ
+                <Sparkles className="h-4 w-4 text-[#c8a265] animate-pulse" />
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#c8a265] font-bold">
+                  ABOUT GENT APPAREL BD
                 </p>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15] text-foreground font-heading">
-                ঐতিহ্য ও রাজকীয় আভিজাত্যের <span className="italic font-normal text-[#c9a96e]">অনন্য ফ্যাশন মেলবন্ধন</span>
+                Better Quality, <span className="italic font-normal text-[#c8a265]">Better Style!</span>
               </h2>
             </div>
 
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              <strong>Lihaaz by Minhaaz</strong> ঢাকার ফ্যাশন সচেতন ও রুচিশীল পুরুষদের জন্য নিয়ে এসেছে খাঁটি সিল্ক, ফাইন সুতি ও এক্সক্লুসিভ জারদৌসি এমব্রয়ডারির প্রিমিয়াম পাঞ্জাবি কালেকশন। গুলশান-২ স্টুডিওতে তৈরি প্রতিটি পোশাকে বজায় রাখা হয় আন্তর্জাতিক সেলাই ফিনিশিং, নিখুঁত ড্র্যাপ এবং আরামদায়ক ফিটিং।
+              <strong>Gent Apparel BD</strong> বাংলাদেশের ফ্যাশন-সচেতন পুরুষদের জন্য ১০০% অথেনটিক এক্সপোর্ট কোয়ালিটির পোশাকের অন্যতম শীর্ষ গন্তব্য। লাকি ব্র্যান্ড, সি ব্যারিয়ার, ইল গ্রাঙ্কিও, অ্যারোপোস্টেল ও স্ল্যাজেঞ্জারের মতো আন্তর্জাতিক ব্র্যান্ডের আসল সারপ্লাস আইটেম সরাসরি সংগ্রহ করে আমরা গ্রাহকের কাছে ন্যায্য মূল্যে পৌঁছে দিই।
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-2 border-t border-border/60">
-              <div className="space-y-1">
-                <p className="text-xl md:text-2xl font-bold text-foreground font-heading">
-                  গুলশান-২
-                </p>
-                <p className="text-xs text-muted-foreground">ডিজাইন স্টুডিও ও ওয়াক-ইন ট্রায়াল</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div className="flex items-center gap-2 text-xs md:text-sm text-foreground/90 font-medium">
+                <CheckCircle2 className="h-4 w-4 text-[#c8a265] shrink-0" />
+                <span>১০০% আসল এক্সপোর্ট কোয়ালিটি সারপ্লাস</span>
               </div>
-              <div className="space-y-1">
-                <p className="text-xl md:text-2xl font-bold text-foreground font-heading">
-                  ১০০% চেক COD
-                </p>
-                <p className="text-xs text-muted-foreground">পার্সেল দেখে মূল্য পরিশোধের সুবিধা</p>
+              <div className="flex items-center gap-2 text-xs md:text-sm text-foreground/90 font-medium">
+                <CheckCircle2 className="h-4 w-4 text-[#c8a265] shrink-0" />
+                <span>পার্সেল খুলে যাচাই করে পেমেন্টের সুযোগ</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs md:text-sm text-foreground/90 font-medium">
+                <CheckCircle2 className="h-4 w-4 text-[#c8a265] shrink-0" />
+                <span>৭ দিনের সহজ সাইজ এক্সচেঞ্জ পলিসি</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs md:text-sm text-foreground/90 font-medium">
+                <CheckCircle2 className="h-4 w-4 text-[#c8a265] shrink-0" />
+                <span>ঢাকা ৮০৳ ও সারাদেশে ১৫০৳ হোম ডেলিভারি</span>
               </div>
             </div>
 
             <div className="pt-3">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-foreground hover:text-[#c9a96e] transition-colors group cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0a0a0a] text-white text-xs font-bold uppercase tracking-wider rounded-sm hover:bg-[#c8a265] hover:text-black transition-colors"
               >
-                Learn More About Our Heritage
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <span>আমাদের সম্পর্কে বিস্তারিত পড়ুন</span>
+                <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </motion.div>

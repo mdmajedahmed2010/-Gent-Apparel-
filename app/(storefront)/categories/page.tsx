@@ -8,9 +8,9 @@ import { CATEGORIES } from "@/lib/demo-data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "All Categories — Lihaaz by Minhaaz | পাঞ্জাবি ক্যাটাগরি সমূহ",
+  title: "All Categories — Gent Apparel BD | সকল প্রোডাক্ট ক্যাটাগরি",
   description:
-    "Browse all Lihaaz by Minhaaz Panjabi categories — Royal Heritage & Wedding Edition, Festive Eid Collection, Classic Signature Cotton, Evening Obsidian Black, and Luxury Raw Silk Jacquard.",
+    "Browse all Gent Apparel BD categories — 100% authentic original export denim jeans, Italian comfort chinos, Slazenger activewear, and winter pullovers.",
 };
 
 type CategoryItem = {
@@ -55,15 +55,15 @@ export default async function CategoriesPage() {
 
         {/* Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/10 text-[#0f0e0d] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ LIHAAZ ROYAL HERITAGE ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#c8a265]/50 bg-[#c8a265]/10 text-[#0a0a0a] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ GENT APPAREL BD ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0f0e0d] font-heading">
-            All Categories
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#0a0a0a] font-heading">
+            Product Categories
           </h1>
-          <div className="w-20 h-[2px] bg-[#c9a96e] mx-auto mt-5" />
+          <div className="w-20 h-[2px] bg-[#c8a265] mx-auto mt-5" />
           <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            গুলশান-২ ডিজাইন স্টুডিওর অফিসিয়াল ক্যাটাগরিগুলো ঘুরে দেখুন—রয়্যাল হেরিটেজ, ফেস্টিভ ঈদ, লাক্সারি সিল্ক এবং ক্ল্যাসিক কটন পাঞ্জাবি।
+            জেন্ট অ্যাপারেল বিডির সকল ক্যাটাগরি ঘুরে দেখুন—১০০% আসল এক্সপোর্ট ডেনিম, ইতালিয়ান গ্যাবার্ডিন চিনো, স্ল্যাজেঞ্জার ট্র্যাক প্যান্ট ও উইন্টার নিটওয়্যার।
           </p>
         </div>
 

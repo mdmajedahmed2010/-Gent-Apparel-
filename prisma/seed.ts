@@ -1,8 +1,9 @@
 /**
- * LIHAAZ BY MINHAAZ — Database Seed Script
- * Designer Menswear, Royal Heritage & Festive Panjabi Catalog
- * Grounded on Facebook Page: https://www.facebook.com/lihaazbyminhaaz/
- * Studio: House-5, Road 54/A, Gulshan-2, Dhaka
+ * GENT APPAREL BD — Database Seed Script
+ * 100% Authentic Export Clothing & Denim Catalog
+ * Grounded on Facebook Page: https://www.facebook.com/gentapparelbd/
+ * Hub: Lalbagh, Dhaka-1211, Bangladesh
+ * Hotline: 01560-018131
  *
  * Usage: npx tsx prisma/seed.ts
  */
@@ -12,13 +13,13 @@ import { prisma } from "../lib/db";
 import { ALL_PRODUCTS, CATEGORIES } from "../lib/demo-data";
 
 const COUPONS = [
-  { code: "LIHAAZ10", type: "PERCENTAGE", value: 10, minOrder: 3500 },
-  { code: "EIDSPECIAL", type: "PERCENTAGE", value: 15, minOrder: 5000 },
-  { code: "ROYAL500", type: "FIXED", value: 500, minOrder: 4500 },
+  { code: "GENT10", type: "PERCENTAGE", value: 10, minOrder: 2000 },
+  { code: "WELCOME100", type: "FIXED", value: 100, minOrder: 1500 },
+  { code: "EXPORTVIP", type: "PERCENTAGE", value: 15, minOrder: 4000 },
 ];
 
 async function main() {
-  console.log("👑 Seeding Lihaaz by Minhaaz database catalog...");
+  console.log("👕 Seeding Gent Apparel BD database catalog...");
 
   // 1. Seed Categories
   console.log("\n📁 Seeding categories...");
@@ -45,7 +46,7 @@ async function main() {
   }
 
   // 2. Seed Products and Variants
-  console.log("\n✨ Seeding authentic Lihaaz by Minhaaz Panjabis...");
+  console.log("\n✨ Seeding authentic Gent Apparel BD products...");
   let productCount = 0;
   let variantCount = 0;
 
@@ -79,7 +80,7 @@ async function main() {
     });
 
     for (const variant of prod.variants) {
-      const sku = `LM-${prod.slug.slice(0, 8).toUpperCase()}-${variant.size}-${variant.color.slice(0, 3).toUpperCase()}`;
+      const sku = `GA-${prod.slug.slice(0, 8).toUpperCase()}-${variant.size}-${variant.color.slice(0, 3).toUpperCase()}`;
 
       await prisma.productVariant.create({
         data: {
@@ -101,7 +102,7 @@ async function main() {
   }
 
   // 3. Seed Coupons
-  console.log("\n🎟️ Seeding Lihaaz by Minhaaz coupons...");
+  console.log("\n🎟️ Seeding Gent Apparel BD coupons...");
   for (const coupon of COUPONS) {
     await prisma.coupon.upsert({
       where: { code: coupon.code },
@@ -118,19 +119,19 @@ async function main() {
   }
 
   // 4. Site Settings
-  console.log("\n⚙️ Seeding Site Settings for Lihaaz by Minhaaz...");
+  console.log("\n⚙️ Seeding Site Settings for Gent Apparel BD...");
   const settings = [
-    { key: "store_name", value: "Lihaaz by Minhaaz" },
-    { key: "store_tagline", value: "Designer Menswear & Royal Heritage Attire" },
+    { key: "store_name", value: "Gent Apparel BD" },
+    { key: "store_tagline", value: "Better Quality, Better Style!" },
     { key: "store_logo", value: "/assets/logo.jpg" },
     { key: "store_favicon", value: "/assets/logo.jpg" },
-    { key: "store_phone", value: "+880 1755-627874" },
-    { key: "store_email", value: "lihaazbyminhaaz@gmail.com" },
-    { key: "store_address", value: "House-5, Road 54/A, Gulshan-2, Dhaka, Bangladesh" },
-    { key: "shipping_dhaka", value: "100" },
-    { key: "shipping_outside", value: "200" },
-    { key: "social_facebook", value: "https://www.facebook.com/lihaazbyminhaaz/" },
-    { key: "social_whatsapp", value: "https://wa.me/8801755627874" },
+    { key: "store_phone", value: "01560-018131" },
+    { key: "store_email", value: "gentapparelbd@gmail.com" },
+    { key: "store_address", value: "Lalbagh, Dhaka-1211, Bangladesh" },
+    { key: "shipping_dhaka", value: "80" },
+    { key: "shipping_outside", value: "150" },
+    { key: "social_facebook", value: "https://www.facebook.com/gentapparelbd" },
+    { key: "social_whatsapp", value: "https://wa.me/8801560018131" },
   ];
 
   for (const s of settings) {
@@ -146,16 +147,16 @@ async function main() {
   // 5. Ensure Admin User
   console.log("\n👤 Verifying admin account...");
   const bcrypt = await import("bcryptjs");
-  const adminEmail = "admin@lihaazbyminhaaz.com";
+  const adminEmail = "admin@gentapparelbd.com";
   const existingAdmin = await prisma.user.findUnique({
     where: { email: adminEmail },
   });
 
   if (!existingAdmin) {
-    const hashedPassword = await bcrypt.hash("Lihaaz@2026", 12);
+    const hashedPassword = await bcrypt.hash("Gent@2026", 12);
     await prisma.user.create({
       data: {
-        name: "Lihaaz Admin",
+        name: "Gent Apparel Admin",
         email: adminEmail,
         passwordHash: hashedPassword,
         role: "SUPER_ADMIN",
@@ -164,7 +165,7 @@ async function main() {
     console.log(`  ✓ Admin account ready (${adminEmail})`);
   }
 
-  console.log(`\n✅ Lihaaz by Minhaaz Seed Completed Successfully!`);
+  console.log(`\n✅ Gent Apparel BD Seed Completed Successfully!`);
   console.log(`   Categories: ${CATEGORIES.length}`);
   console.log(`   Products: ${productCount}`);
   console.log(`   Variants: ${variantCount}`);

@@ -38,7 +38,7 @@ export default async function StorefrontLayout({ children }: { children: React.R
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801755627874" messengerUrl="https://m.me/lihaazbyminhaaz" />
+      <FloatingChat phoneNumber="8801560018131" messengerUrl="https://m.me/gentapparelbd" />
       <MobileBottomNav />
       <PageTracker />
     </>
@@ -70,11 +70,11 @@ function MaintenancePage() {
           Scheduled Maintenance
         </h1>
         <p className="text-gray-500 text-sm leading-relaxed">
-          Lihaaz by Minhaaz is currently undergoing scheduled updates to provide you with the best royal heritage
+          Gent Apparel BD is currently undergoing scheduled updates to provide you with the best export shopping
           experience. We will be back online shortly. Thank you for your patience!
         </p>
         <div className="pt-6 border-t border-gray-200 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Lihaaz by Minhaaz. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Gent Apparel BD. All rights reserved.</p>
         </div>
       </div>
     </div>

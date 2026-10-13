@@ -196,7 +196,7 @@ export function TrackOrderForm() {
             value={orderNumber}
             onChange={(e) => setOrderNumber(e.target.value)}
             className="w-full h-10 px-3 rounded-md border border-border bg-background text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-            placeholder="ORD-2026-00001"
+            placeholder="GA-2026-00001"
             disabled={isLoading}
           />
         </div>

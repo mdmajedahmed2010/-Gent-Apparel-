@@ -42,19 +42,7 @@ function getSecondaryImage(
     );
     if (second) return second;
   }
-  if (!image) return "/assets/asset-1.jpg";
-
-  if (image === "/assets/asset-1.jpg") return "/assets/asset-2.jpg";
-  if (image === "/assets/asset-2.jpg") return "/assets/asset-1.jpg";
-  if (image === "/assets/asset-3.jpg") return "/assets/asset-6.jpg";
-  if (image === "/assets/asset-4.jpg") return "/assets/asset-5.jpg";
-  if (image === "/assets/asset-5.jpg") return "/assets/asset-4.jpg";
-  if (image === "/assets/asset-6.jpg") return "/assets/asset-3.jpg";
-  if (image === "/assets/asset-7.jpg") return "/assets/asset-8.jpg";
-  if (image === "/assets/asset-8.jpg") return "/assets/asset-7.jpg";
-  if (image === "/assets/asset-9.jpg") return "/assets/asset-10.jpg";
-  if (image === "/assets/asset-10.jpg") return "/assets/asset-9.jpg";
-
+  if (!image) return "/assets/lucky-brand-light-wash.jpg";
   return image;
 }
 

@@ -1,20 +1,18 @@
 /**
- * BIBAZ — Register Page
- * SOP §২ — Frontend Plan PAGE 6
- *
+ * GENT APPAREL BD — Register Page
  * Route: /register
- * Features: Name, Email, Phone, Password, Confirm Password — Zod validated
  */
 
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Suspense } from "react";
 import { RegisterForm } from "@/components/auth/register-form";
 import { Loader2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Create Account",
-  description: "Create your BIBAZ account for a better shopping experience.",
+  title: "Create Account — Gent Apparel BD | Better Quality, Better Style!",
+  description: "Create your Gent Apparel BD account for a seamless shopping experience.",
 };
 
 export default function RegisterPage() {
@@ -22,13 +20,24 @@ export default function RegisterPage() {
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-background">
       <div className="w-full max-w-md space-y-8">
         {/* Header */}
-        <div className="text-center space-y-2">
-          <Link href="/" className="inline-block text-3xl font-bold tracking-tight">
-            BIBAZ
+        <div className="text-center space-y-3">
+          <Link href="/" className="inline-flex flex-col items-center gap-2 group">
+            <div className="relative h-14 w-14 rounded-full overflow-hidden border border-[#c8a265]/40 shadow-xs group-hover:scale-105 transition-transform">
+              <Image
+                src="/assets/logo.jpg"
+                alt="Gent Apparel BD"
+                fill
+                className="object-cover"
+                sizes="56px"
+              />
+            </div>
+            <span className="text-xl md:text-2xl font-bold font-heading tracking-wider text-foreground">
+              GENT APPAREL BD
+            </span>
           </Link>
-          <h1 className="text-xl font-semibold">Create your account</h1>
-          <p className="text-sm text-muted-foreground">
-            Join BIBAZ for a personalized shopping experience
+          <h1 className="text-xl font-semibold">Create Your Account</h1>
+          <p className="text-xs text-muted-foreground uppercase tracking-widest">
+            Join Gent Apparel BD for exclusive export edits &amp; faster checkout
           </p>
         </div>
 
@@ -48,7 +57,7 @@ export default function RegisterPage() {
           Already have an account?{" "}
           <Link
             href="/login"
-            className="font-medium text-foreground hover:underline underline-offset-4"
+            className="font-semibold text-foreground hover:text-[#c8a265] underline underline-offset-4"
           >
             Sign in
           </Link>

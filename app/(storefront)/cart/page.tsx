@@ -12,8 +12,8 @@ import { CartPageContent } from "@/components/cart/cart-page-content";
 import { getStorefrontSettings } from "@/actions/settings.actions";
 
 export const metadata: Metadata = {
-  title: "Shopping Cart",
-  description: "Review your shopping cart and proceed to checkout.",
+  title: "Shopping Cart — Gent Apparel BD | Better Quality, Better Style!",
+  description: "Review your shopping cart and proceed to checkout with Gent Apparel BD.",
 };
 
 export default async function CartPage() {

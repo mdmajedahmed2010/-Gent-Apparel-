@@ -379,8 +379,7 @@ export function CartDrawer() {
 
                   {/* Hint */}
                   <p className="text-[9px] text-muted-foreground/50 uppercase tracking-widest">
-                    Try: <span className="font-mono font-bold text-foreground/40">BIBAZ10</span>,{" "}
-                    <span className="font-mono font-bold text-foreground/40">EID2026</span>
+                    Try: <span className="font-mono font-bold text-foreground/40">GENT10</span>
                   </p>
                 </div>
               )}
@@ -428,7 +427,7 @@ export function CartDrawer() {
               )}
 
               <p className="text-[10px] text-muted-foreground uppercase tracking-wider leading-relaxed">
-                Taxes & shipping calculated at checkout. Free shipping on orders over ৳10,000.
+                ডেলিভারি চার্জ: ঢাকা ৮০৳ • ঢাকার বাইরে ১৫০৳। ক্যাশ অন ডেলিভারি ও পার্সেল চেক সুবিধা।
               </p>
 
               <div className="space-y-2 mt-4">
